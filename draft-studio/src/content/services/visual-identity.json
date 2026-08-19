@@ -1,0 +1,59 @@
+{
+  "title": {
+    "ar": "تصميم الهويات البصرية للمشاريع المعمارية",
+    "en": "Visual Identity Design for Architectural Projects",
+    "fr": "Conception d'Identité Visuelle pour Projets Architecturaux"
+  },
+  "slug": "visual-identity",
+  "icon": "/assets/img/icons/service-3.svg",
+  "shortDescription": {
+    "ar": "هويات بصرية احترافية للمكاتب الهندسية",
+    "en": "Professional visual identities for engineering firms",
+    "fr": "Identités visuelles professionnelles pour cabinets d'ingénierie"
+  },
+  "fullDescription": {
+    "ar": "نصمم هويات بصرية متكاملة تعكس احترافية مكتبك الهندسي، تشمل الشعار والأوراق الرسمية والبطاقات والعناصر البصرية الأخرى.",
+    "en": "We design comprehensive visual identities that reflect the professionalism of your engineering firm, including logo, stationery, business cards, and other visual elements.",
+    "fr": "Nous concevons des identités visuelles complètes qui reflètent le professionnalisme de votre cabinet d'ingénierie, y compris logo, papeterie, cartes de visite et autres éléments visuels."
+  },
+  "processSteps": [
+    {
+      "title": {
+        "ar": "تحليل العلامة",
+        "en": "Brand Analysis",
+        "fr": "Analyse de la Marque"
+      },
+      "description": {
+        "ar": "نفهم قيم ورؤية مكتبك",
+        "en": "We understand your firm's values and vision",
+        "fr": "Nous comprenons les valeurs et la vision de votre cabinet"
+      }
+    },
+    {
+      "title": {
+        "ar": "تصميم الشعار",
+        "en": "Logo Design",
+        "fr": "Conception du Logo"
+      },
+      "description": {
+        "ar": "نبتكر شعارًا فريدًا يعبر عن هويتك",
+        "en": "We create a unique logo expressing your identity",
+        "fr": "Nous créons un logo unique exprimant votre identité"
+      }
+    },
+    {
+      "title": {
+        "ar": "دليل الهوية",
+        "en": "Brand Guidelines",
+        "fr": "Guide de la Marque"
+      },
+      "description": {
+        "ar": "نضع معايير استخدام الهوية",
+        "en": "We establish brand usage standards",
+        "fr": "Nous établissons des normes d'utilisation de la marque"
+      }
+    }
+  ],
+  "comingSoon": false,
+  "order": 3
+}

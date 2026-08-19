@@ -1,0 +1,32 @@
+---
+// ProjectCard Component
+// Displays a single project with image, category, title and link
+
+export interface Props {
+  imageSrc: string;
+  category: string;
+  title: string;
+  href: string;
+  bgClass?: string;
+  wowDelay?: string;
+}
+
+const { 
+  imageSrc, 
+  category, 
+  title, 
+  href, 
+  bgClass = '',
+  wowDelay = '.2s'
+} = Astro.props;
+---
+
+<div class={`box-2 ${bgClass} wow fadeInUp`} data-wow-delay={wowDelay}>
+  <div class="project-content">
+    <div class="text">
+      <span>{category}</span>
+      <h4><a href={href}>{title}</a></h4>
+    </div>
+    <a href={href} class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>

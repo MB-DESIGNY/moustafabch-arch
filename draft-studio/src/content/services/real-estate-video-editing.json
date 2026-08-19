@@ -1,0 +1,21 @@
+{
+  "title": {
+    "ar": "المونتاج العقاري",
+    "en": "Real Estate Video Editing",
+    "fr": "Montage Vidéo Immobilier"
+  },
+  "slug": "real-estate-video-editing",
+  "icon": "/assets/img/icons/service-8.svg",
+  "shortDescription": {
+    "ar": "فيديوهات احترافية للتسويق العقاري",
+    "en": "Professional videos for real estate marketing",
+    "fr": "Vidéos professionnelles pour le marketing immobilier"
+  },
+  "fullDescription": {
+    "ar": "ننتج فيديوهات عقارية احترافية تعرض مشاريعك بأفضل صورة. (هذه الخدمة قادمة قريبًا)",
+    "en": "We produce professional real estate videos that showcase your projects in the best light. (This service is coming soon)",
+    "fr": "Nous produisons des vidéos immobilières professionnelles qui présentent vos projets sous leur meilleur jour. (Ce service sera bientôt disponible)"
+  },
+  "comingSoon": true,
+  "order": 8
+}

@@ -1,0 +1,62 @@
+---
+// ServicesSection Component
+// Services section displaying multiple service cards
+
+import ServiceCard from '../ui/ServiceCard.astro';
+import SectionTitle from '../ui/SectionTitle.astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  services: CollectionEntry<'services'>[];
+  ctaText?: string;
+  ctaHref?: string;
+  showCtaLink?: boolean;
+}
+
+const {
+  title = 'What I Do',
+  subtitle = 'SERVICES',
+  services,
+  ctaText = 'View All Service',
+  ctaHref = '/services',
+  showCtaLink = true
+} = Astro.props;
+---
+
+<section class="service-section service-3 section-padding section-bg fix">
+  {/* Decorative Shapes */}
+  <div class="random-shape float-bob-x">
+    <img src="/assets/img/shape/random-shape-3.png" alt="shape" />
+  </div>
+  
+  <div class="container">
+    <SectionTitle 
+      title={title}
+      subtitle={subtitle}
+      iconSrc="/assets/img/icon/32.svg"
+      align="center"
+      style="style-3"
+    />
+    
+    <div class="row">
+      {services.slice(0, 6).map((service, index) => (
+        <ServiceCard 
+          iconSrc={`/assets/img/icon/${39 + index}.svg`}
+          title={service.data.title}
+          description={service.data.description}
+          href={`/services/${service.slug}`}
+          comingSoon={service.data.comingSoon}
+          wowDelay={`${0.3 + (index * 0.3)}s`}
+        />
+      ))}
+    </div>
+    
+    {showCtaLink && (
+      <span class="wow fadeInUp mt-5" data-wow-delay=".3s">
+        {ctaText} <a href={ctaHref}>View All Service</a>
+      </span>
+    )}
+  </div>
+</section>

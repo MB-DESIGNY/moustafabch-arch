@@ -1,0 +1,53 @@
+---
+// TestimonialCard Component
+// Displays a single testimonial with rating, quote, author info
+
+export interface Props {
+  rating: number;
+  quote: string;
+  authorName: string;
+  authorRole: string;
+  authorImageSrc?: string;
+  logoSrc?: string;
+}
+
+const { 
+  rating, 
+  quote, 
+  authorName, 
+  authorRole,
+  authorImageSrc,
+  logoSrc
+} = Astro.props;
+
+const stars = Array.from({ length: rating }, (_, i) => i);
+---
+
+<div class="swiper-slide">
+  <div class="testimonials-card-item">
+    <div class="content">
+      <div class="star">
+        {stars.map(() => (
+          <i class="fa-solid fa-star"></i>
+        ))}
+      </div>
+      <p>"{quote}"</p>
+      <div class="bottom">
+        <div class="info">
+          <h4>{authorName}</h4>
+          <span>{authorRole}</span>
+        </div>
+        {logoSrc && (
+          <div class="icon">
+            <img src={logoSrc} alt="icon" />
+          </div>
+        )}
+      </div>
+    </div>
+    {authorImageSrc && (
+      <div class="thumb-box wow img-custom-anim-top">
+        <img src={authorImageSrc} alt="img" />
+      </div>
+    )}
+  </div>
+</div>

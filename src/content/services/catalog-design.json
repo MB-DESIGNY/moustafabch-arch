@@ -1,0 +1,46 @@
+---
+title:
+  ar: "تصميم الكتالوجات"
+  en: "Catalog Design"
+  fr: "Conception de Catalogues"
+slug: "catalog-design"
+icon: "/assets/img/icons/service-5.svg"
+shortDescription:
+  ar: "كتالوجات احترافية للمشاريع الهندسية والعقارية"
+  en: "Professional catalogs for engineering and real estate projects"
+  fr: "Catalogues professionnels pour projets d'ingénierie et immobiliers"
+fullDescription:
+  ar: "نصمم كتالوجات احترافية تعرض مشاريعك ومنتجاتك بشكل جذاب ومنظم، تساعدك على التسويق الفعّال وإبهار العملاء المحتملين."
+  en: "We design professional catalogs that showcase your projects and products in an attractive and organized manner, helping you market effectively and impress potential clients."
+  fr: "Nous concevons des catalogues professionnels qui présentent vos projets et produits de manière attrayante et organisée, vous aidant à commercialiser efficacement et à impressionner les clients potentiels."
+processSteps:
+  - title:
+      ar: "تحليل المحتوى"
+      en: "Content Analysis"
+      fr: "Analyse du Contenu"
+    description:
+      ar: "فهم طبيعة المنتجات والمشاريع المعروضة"
+      en: "Understanding the nature of displayed products and projects"
+      fr: "Compréhension de la nature des produits et projets présentés"
+  - title:
+      ar: "تصميم الهيكل"
+      en: "Structure Design"
+      fr: "Conception de la Structure"
+    description:
+      ar: "تنظيم المحتوى في أقسام منطقية"
+      en: "Organizing content into logical sections"
+      fr: "Organisation du contenu en sections logiques"
+  - title:
+      ar: "الإخراج النهائي"
+      en: "Final Layout"
+      fr: "Mise en Page Finale"
+    description:
+      ar: "إعداد الملف النهائي للطباعة أو النشر الرقمي"
+      en: "Preparing final file for print or digital publishing"
+      fr: "Préparation du fichier final pour l'impression ou la publication numérique"
+gallery:
+  - "/assets/img/projects/catalog-1.jpg"
+  - "/assets/img/projects/catalog-2.jpg"
+comingSoon: false
+order: 5
+---

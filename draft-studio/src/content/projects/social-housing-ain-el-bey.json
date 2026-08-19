@@ -1,0 +1,38 @@
+{
+  "title": {
+    "ar": "مشاريع السكن الاجتماعي - عين الباي",
+    "en": "Social Housing Projects - Ain El Bey",
+    "fr": "Projets de Logement Social - Ain El Bey"
+  },
+  "slug": "social-housing-ain-el-bey",
+  "category": "residential",
+  "coverImage": "/assets/img/projects/social-housing-cover.jpg",
+  "gallery": [
+    "/assets/img/projects/social-1.jpg",
+    "/assets/img/projects/social-2.jpg"
+  ],
+  "client": "OPGI قسنطينة",
+  "location": {
+    "ar": "عين الباي، قسنطينة، الجزائر",
+    "en": "Ain El Bey, Constantine, Algeria",
+    "fr": "Ain El Bey, Constantine, Algérie"
+  },
+  "year": "2018-2020",
+  "tools": ["AutoCAD", "Revit", "Photoshop"],
+  "summary": {
+    "ar": "تصميم مشروعين للسكن الاجتماعي comprising 52 و 17 وحدة سكنية",
+    "en": "Design of two social housing projects comprising 52 and 17 residential units",
+    "fr": "Conception de deux projets de logement social comprenant 52 et 17 unités résidentielles"
+  },
+  "challenge": {
+    "ar": "توفير مساكن عملية وبأسعار معقولة مع الالتزام بالمعايير الحكومية",
+    "en": "Providing practical and affordable housing while complying with government standards",
+    "fr": "Fournir des logements pratiques et abordables tout en respectant les normes gouvernementales"
+  },
+  "outcome": {
+    "ar": "تسليم المشروعين في الوقت المحدد واستفادة العائلات من المساكن",
+    "en": "Both projects delivered on time and families benefited from the housing",
+    "fr": "Les deux projets livrés dans les délais et les familles ont bénéficié des logements"
+  },
+  "featured": true
+}

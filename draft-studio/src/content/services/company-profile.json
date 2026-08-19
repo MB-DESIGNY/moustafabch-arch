@@ -1,0 +1,59 @@
+{
+  "title": {
+    "ar": "تصميم بروفايل للشركات الهندسية",
+    "en": "Company Profile Design for Engineering Firms",
+    "fr": "Conception de Profil d'Entreprise pour Cabinets d'Ingénierie"
+  },
+  "slug": "company-profile",
+  "icon": "/assets/img/icons/service-4.svg",
+  "shortDescription": {
+    "ar": "بروفايلات احترافية تعرض إنجازاتك",
+    "en": "Professional profiles showcasing your achievements",
+    "fr": "Profils professionnels présentant vos réalisations"
+  },
+  "fullDescription": {
+    "ar": "نصمم بروفايلات شركات احترافية تبرز خبراتك وإنجازاتك بطريقة جذابة ومقنعة للعملاء المحتملين.",
+    "en": "We design professional company profiles that highlight your expertise and achievements in an attractive and convincing way for potential clients.",
+    "fr": "Nous concevons des profils d'entreprise professionnels qui mettent en valeur votre expertise et vos réalisations de manière attrayante et convaincante pour les clients potentiels."
+  },
+  "processSteps": [
+    {
+      "title": {
+        "ar": "جمع المحتوى",
+        "en": "Content Collection",
+        "fr": "Collecte de Contenu"
+      },
+      "description": {
+        "ar": "نجمع معلومات ومشاريع مكتبك",
+        "en": "We gather your firm's information and projects",
+        "fr": "Nous recueillons les informations et projets de votre cabinet"
+      }
+    },
+    {
+      "title": {
+        "ar": "التصميم الجرافيكي",
+        "en": "Graphic Design",
+        "fr": "Conception Graphique"
+      },
+      "description": {
+        "ar": "نصمم صفحات البروفايل بإبداع",
+        "en": "We creatively design profile pages",
+        "fr": "Nous concevons créativement les pages du profil"
+      }
+    },
+    {
+      "title": {
+        "ar": "المراجعة والطباعة",
+        "en": "Review and Printing",
+        "fr": "Révision et Impression"
+      },
+      "description": {
+        "ar": "نراجع ونجهز للطباعة النهائية",
+        "en": "We review and prepare for final printing",
+        "fr": "Nous révisons et préparons l'impression finale"
+      }
+    }
+  ],
+  "comingSoon": false,
+  "order": 4
+}

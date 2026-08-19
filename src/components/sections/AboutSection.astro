@@ -1,0 +1,129 @@
+---
+// AboutSection Component
+// About section with images, title, description and CTA
+
+import SectionTitle from '../ui/SectionTitle.astro';
+
+export interface Props {
+  mainImageSrc: string;
+  circleTextImageSrc?: string;
+  clientImageSrc?: string;
+  badgeIconSrc?: string;
+  badgeText?: string;
+  title: string;
+  description: string;
+  highlightIconSrc?: string;
+  highlightText?: string;
+  items?: Array<{
+    iconSrc: string;
+    title: string;
+  }>;
+  ctaHref?: string;
+  ctaText?: string;
+  videoHref?: string;
+  videoText?: string;
+}
+
+const {
+  mainImageSrc,
+  circleTextImageSrc = '/assets/img/about/text.png',
+  clientImageSrc = '/assets/img/about/client.png',
+  badgeIconSrc = '/assets/img/icon/32.svg',
+  badgeText = 'About Me',
+  title,
+  description,
+  highlightIconSrc = '/assets/img/icon/36.svg',
+  highlightText = 'We believe everyone deserves affordable and simple access to professional services',
+  items = [
+    { iconSrc: '/assets/img/icon/37.svg', title: 'Proven Track Record' },
+    { iconSrc: '/assets/img/icon/38.svg', title: 'Accessible and Responsive' }
+  ],
+  ctaHref = '/about',
+  ctaText = 'Learn More',
+  videoHref = 'https://www.youtube.com/watch?v=8Q3jJA60jWo',
+  videoText = 'Inter Video'
+} = Astro.props;
+---
+
+<section class="about-section about-3 section-padding fix">
+  {/* Decorative Shapes */}
+  <div class="order-shape float-bob-y">
+    <img src="/assets/img/shape/scale-orders.png" alt="shape" />
+  </div>
+  <div class="scales-shape float-bob-x">
+    <img src="/assets/img/shape/Scales-2.png" alt="img" />
+  </div>
+  
+  <div class="container">
+    <div class="about-wrapper-3">
+      <div class="row g-3 align-items-center justify-content-between">
+        {/* Images Column */}
+        <div class="col-lg-6">
+          <div class="about-images">
+            <img 
+              src={mainImageSrc} 
+              alt="img" 
+              class="wow img-custom-anim-left"
+              data-wow-delay=".3s" 
+            />
+            <div class="circle-image">
+              <div class="text-image">
+                <img src={circleTextImageSrc} alt="img" />
+                <div class="client-image">
+                  <img src={clientImageSrc} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Content Column */}
+        <div class="col-lg-6">
+          <div class="about-content">
+            <SectionTitle 
+              subtitle={badgeText}
+              title={title}
+              iconSrc={badgeIconSrc}
+              wowDelay=".2s"
+            />
+            <p class="wow fadeInUp" data-wow-delay=".3s">{description}</p>
+            
+            <div class="text wow fadeInUp" data-wow-delay=".5s">
+              <div class="icon">
+                <img src={highlightIconSrc} alt="icon" />
+              </div>
+              <p>{highlightText}</p>
+            </div>
+            
+            <div class="items">
+              {items.map((item, index) => (
+                <div 
+                  class="item wow fadeInUp" 
+                  data-wow-delay={`${0.3 + (index * 0.3)}s`}
+                >
+                  <div class="icon">
+                    <img src={item.iconSrc} alt="icon" />
+                  </div>
+                  <h6>{item.title}</h6>
+                </div>
+              ))}
+            </div>
+            
+            <div class="about-btn">
+              <a href={ctaHref} class="theme-btn">
+                {ctaText}
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              {videoHref && (
+                <a href={videoHref} class="video-btn video-popup">
+                  <span class="icon"><i class="fa-solid fa-play"></i></span>
+                  <span class="textx">{videoText}</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

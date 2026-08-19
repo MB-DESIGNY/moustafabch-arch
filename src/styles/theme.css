@@ -1,0 +1,46 @@
+/* Draft Studio Theme Color Remap - Per design.md §3 */
+/* Replaces empty color.css from original template */
+
+:root {
+  /* Primary theme color - Teal instead of Neon Green */
+  --theme: #00C4B5;
+  
+  /* Background colors - Deep Navy instead of pure black */
+  --bg: #0E1030;
+  --bg-2: #1A1E60;
+  --body: #0A0D28;
+  
+  /* Text colors - Keep light gray for contrast */
+  --text: #C1C1C1;
+  --header: #FFFFFF;
+  
+  /* Border colors */
+  --border: 1.5px solid rgba(193, 193, 193, 0.16);
+  --border-2: 1.5px solid #00C4B5;
+  
+  /* Accent colors - Cobalt for CTAs */
+  --accent-primary: #2F3EC0;
+  --accent-hover: #1F2E9A;
+  
+  /* Light card backgrounds */
+  --card-bg: #DFE7FF;
+}
+
+/* Override any remaining neon green references */
+.text-theme {
+  color: var(--theme) !important;
+}
+
+.bg-theme {
+  background-color: var(--theme) !important;
+}
+
+.btn-theme {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.btn-theme:hover {
+  background-color: var(--theme);
+  border-color: var(--theme);
+}

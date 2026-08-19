@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Mustafa Benchabane",
+    "title": "Architecte & Marketeur Immobilier",
+    "subtitle": "Concevoir des espaces qui inspirent et construisent un avenir meilleur",
+    "ctaPrimary": "Voir Mon Travail",
+    "ctaSecondary": "Me Contacter"
+  },
+  "feature": {
+    "title": "Pourquoi Choisir Draft Studio",
+    "card1Title": "Design Innovant",
+    "card1Desc": "Solutions de design créatives alliant beauté et fonctionnalité",
+    "card2Title": "Expérience Étendue",
+    "card2Desc": "7 ans d'expérience sur les marchés saoudien, algérien et russe",
+    "card3Title": "Qualité Garantie",
+    "card3Desc": "Engagement envers les plus hauts standards de qualité et de précision dans chaque projet"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Architecte spécialisé en design architectural et marketing immobilier, j'ai fondé Draft Studio pour fournir des solutions intégrées combinant créativité architecturale et stratégies marketing efficaces.",
+    "experience": "7 Ans d'Expérience",
+    "projectsCompleted": "297+ Projets Réalisés",
+    "clientsCount": "138 Clients Satisfaits",
+    "satisfactionRate": "97% Taux de Satisfaction"
+  },
+  "services": {
+    "title": "Mes Services",
+    "subtitle": "Solutions intégrées pour vos besoins architecturaux et marketing",
+    "viewAll": "Voir Tous les Services",
+    "comingSoon": "Bientôt Disponible"
+  },
+  "client": {
+    "title": "Mes Clients",
+    "activeClients": "Clients Actifs",
+    "testimonialsTitle": "Témoignages de Clients"
+  },
+  "project": {
+    "title": "Derniers Projets",
+    "subtitle": "Découvrez mes derniers travaux en design architectural et marketing immobilier",
+    "viewAll": "Voir Tous les Projets",
+    "featured": "En Vedette"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Un parcours de réussites et de défis"
+  },
+  "testimonial": {
+    "title": "Ce Que Disent Mes Clients",
+    "rating": "Évaluation"
+  },
+  "funfact": {
+    "yearsExperience": "Ans d'Expérience",
+    "projectsCompleted": "Projets Réalisés",
+    "happyClients": "Clients Satisfaits",
+    "satisfactionRate": "Taux de Satisfaction"
+  },
+  "footer": {
+    "description": "Draft Studio - Design Architectural & Marketing Immobilier",
+    "copyright": "Tous Droits Réservés ©",
+    "developedBy": "Développé par"
+  },
+  "contact": {
+    "title": "Prendre Contact",
+    "phone": "Téléphone",
+    "email": "Email",
+    "website": "Site Web",
+    "location": "Emplacement",
+    "sendMessage": "Envoyer un Message",
+    "yourName": "Votre Nom",
+    "yourEmail": "Votre Email",
+    "yourMessage": "Votre Message",
+    "sendNow": "Envoyer Maintenant"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "subtitle": "Réponses aux questions les plus courantes"
+  },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "meta": {
+    "defaultTitle": "Draft Studio - Design Architectural & Marketing Immobilier",
+    "defaultDescription": "Mustafa Benchabane - Architecte et Marketeur Immobilier avec 7 ans d'expérience en Arabie Saoudite, Russie et Algérie"
+  }
+}

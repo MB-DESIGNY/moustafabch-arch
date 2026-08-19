@@ -1,0 +1,109 @@
+---
+// TestimonialsSection Component
+// Testimonials section with Swiper slider
+
+import TestimonialCard from '../ui/TestimonialCard.astro';
+import SectionTitle from '../ui/SectionTitle.astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  testimonials: CollectionEntry<'testimonials'>[];
+  featuredImageSrc?: string;
+}
+
+const {
+  title = "What's Our Clients Say",
+  subtitle = 'TESTIMONIALS',
+  testimonials,
+  featuredImageSrc = '/assets/img/testimonials/6.jpg'
+} = Astro.props;
+---
+
+<section class="testimonials-section testimonials-3 section-padding section-bg fix">
+  {/* Decorative Shapes */}
+  <div class="scale-shape float-bob-x">
+    <img src="/assets/img/shape/Scales.png" alt="shape" />
+  </div>
+  <div class="orders-shape float-bob-y">
+    <img src="/assets/img/shape/scale-orders-2.png" alt="shape" />
+  </div>
+  
+  <div class="container">
+    <div class="section-title-area">
+      <SectionTitle 
+        title={title}
+        subtitle={subtitle}
+        iconSrc="/assets/img/shape/star-2.png"
+        style="style-3"
+      />
+      
+      {/* Slider Navigation */}
+      <div class="slide-btn">
+        <button class="array-prev style-2"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="array-next style-2"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="swiper testimonial-slider-2">
+          <div class="swiper-wrapper">
+            {testimonials.length > 0 ? (
+              testimonials.map((testimonial) => (
+                <TestimonialCard 
+                  rating={testimonial.data.rating || 5}
+                  quote={testimonial.data.quote}
+                  authorName={testimonial.data.authorName}
+                  authorRole={testimonial.data.authorRole}
+                  authorImageSrc={testimonial.data.authorImageSrc}
+                  logoSrc={testimonial.data.logoSrc}
+                />
+              ))
+            ) : (
+              /* Empty state - ready for content */
+              <div class="swiper-slide">
+                <div class="testimonials-card-item">
+                  <div class="content">
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Client testimonials coming soon"</p>
+                    <div class="bottom">
+                      <div class="info">
+                        <h4>Client Name</h4>
+                        <span>Project Type</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3">
+        <div class="thumb">
+          <img 
+            src={featuredImageSrc} 
+            alt="img" 
+            class="wow img-custom-anim-top"
+            data-wow-delay=".3s" 
+          />
+          {testimonials[0] && (
+            <div class="info">
+              <h4>{testimonials[0].data.authorName}</h4>
+              <span>{testimonials[0].data.authorRole}</span>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+---
+title:
+  ar: "تصميم الهويات البصرية"
+  en: "Visual Identity Design"
+  fr: "Conception d'Identité Visuelle"
+slug: "visual-identity"
+icon: "/assets/img/icons/service-3.svg"
+shortDescription:
+  ar: "هويات بصرية متكاملة للمشاريع المعمارية والشركات الهندسية"
+  en: "Complete visual identities for architectural projects and engineering firms"
+  fr: "Identités visuelles complètes pour projets architecturaux et firmes d'ingénierie"
+fullDescription:
+  ar: "نصمم هويات بصرية احترافية تعكس رؤية وقيم شركتك، من الشعار إلى جميع العناصر البصرية اللازمة لبناء علامة تجارية قوية ومتميزة في السوق."
+  en: "We design professional visual identities that reflect your company's vision and values, from the logo to all necessary visual elements to build a strong and distinctive brand in the market."
+  fr: "Nous concevons des identités visuelles professionnelles qui reflètent la vision et les valeurs de votre entreprise, du logo à tous les éléments visuels nécessaires pour construire une marque forte et distinctive sur le marché."
+processSteps:
+  - title:
+      ar: "تحليل العلامة التجارية"
+      en: "Brand Analysis"
+      fr: "Analyse de la Marque"
+    description:
+      ar: "فهم قيم الشركة وجمهورها المستهدف"
+      en: "Understanding company values and target audience"
+      fr: "Compréhension des valeurs de l'entreprise et du public cible"
+  - title:
+      ar: "تصميم الشعار"
+      en: "Logo Design"
+      fr: "Conception du Logo"
+    description:
+      ar: "ابتكار شعار فريد يعبر عن هوية الشركة"
+      en: "Creating a unique logo that expresses the company identity"
+      fr: "Création d'un logo unique qui exprime l'identité de l'entreprise"
+  - title:
+      ar: "دليل الهوية"
+      en: "Brand Guidelines"
+      fr: "Guide de la Marque"
+    description:
+      ar: "إعداد دليل شامل لاستخدام العناصر البصرية"
+      en: "Preparing a comprehensive guide for using visual elements"
+      fr: "Préparation d'un guide complet pour l'utilisation des éléments visuels"
+gallery:
+  - "/assets/img/projects/identity-1.jpg"
+  - "/assets/img/projects/identity-2.jpg"
+comingSoon: false
+order: 3
+---

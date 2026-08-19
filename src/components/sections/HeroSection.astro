@@ -1,0 +1,93 @@
+---
+// HeroSection Component
+// Main hero section with background image, title, description and CTA
+
+export interface Props {
+  backgroundImageSrc: string;
+  badgeIconSrc?: string;
+  badgeText?: string;
+  title: string;
+  description: string;
+  ctaHref?: string;
+  ctaText?: string;
+  socialLinks?: Array<{ label: string; href: string }>;
+  heroImageSrc?: string;
+  bgShapeSrc?: string;
+}
+
+const {
+  backgroundImageSrc,
+  badgeIconSrc = '/assets/img/icon/32.svg',
+  badgeText = 'مهندس معماري',
+  title,
+  description,
+  ctaHref = '/contact',
+  ctaText = 'Hire Me Now',
+  socialLinks = [
+    { label: 'Facebook', href: '#' },
+    { label: 'Twitter', href: '#' },
+    { label: 'Linked in', href: '#' },
+    { label: 'Dribbble', href: '#' }
+  ],
+  heroImageSrc = '/assets/img/hero/hero-3.png',
+  bgShapeSrc = '/assets/img/hero/blur.png'
+} = Astro.props;
+---
+
+<section class="hero-section hero-3 bg-cover fix" style={`background-image: url(${backgroundImageSrc});`}>
+  {/* Decorative Shapes */}
+  <div class="balance-shape float-bob-x">
+    <img src="/assets/img/shape/balance.png" alt="shape" />
+  </div>
+  <div class="ruler-shape float-bob-y">
+    <img src="/assets/img/shape/rules-coler-2.png" alt="shape" />
+  </div>
+  <div class="random-shape float-bob-y">
+    <img src="/assets/img/shape/random-shape-2.png" alt="random-shape" />
+  </div>
+
+  {/* Social Links */}
+  <div class="hero-info">
+    {socialLinks.map((link) => (
+      <a href={link.href} class={link.label === 'Facebook' ? 'active' : ''}>{link.label}</a>
+    ))}
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="hero-content-wrapper">
+          <span class="wow fadeInUp">
+            <img src={badgeIconSrc} alt="icon" />
+            {badgeText}
+          </span>
+          <h1 class="wow fadeInUp" data-wow-delay=".2s">{title}</h1>
+          <p class="wow fadeInUp" data-wow-delay=".3s">{description}</p>
+          <a href={ctaHref} class="theme-btn wow fadeInUp" data-wow-delay=".4s">
+            {ctaText} <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-image">
+          <img 
+            src={heroImageSrc} 
+            alt="img" 
+            class="wow img-custom-anim-top" 
+            data-wow-duration="1.3s" 
+            data-wow-delay="0.3s" 
+          />
+          <div class="bg-shape">
+            <img 
+              src={bgShapeSrc} 
+              alt="img" 
+              class="wow img-custom-anim-right" 
+              data-wow-duration="1.3s" 
+              data-wow-delay="0.3s" 
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,59 @@
+{
+  "title": {
+    "ar": "التصميم المعماري للبنايات ذات الاستعمال العام أو التجاري",
+    "en": "Architectural Design for Commercial and Public Buildings",
+    "fr": "Conception Architecturale de Bâtiments Commerciaux et Publics"
+  },
+  "slug": "architectural-design-commercial",
+  "icon": "/assets/img/icons/service-2.svg",
+  "shortDescription": {
+    "ar": "حلول معمارية مبتكرة للمباني التجارية والعامة",
+    "en": "Innovative architectural solutions for commercial and public buildings",
+    "fr": "Solutions architecturales innovantes pour les bâtiments commerciaux et publics"
+  },
+  "fullDescription": {
+    "ar": "متخصصون في تصميم المباني التجارية والمكاتب والمحلات والمباني العامة. نخلق مساحات عملية وجذابة تعزز من قيمة مشروعك التجاري.",
+    "en": "Specialists in designing commercial buildings, offices, shops, and public buildings. We create practical and attractive spaces that enhance the value of your commercial project.",
+    "fr": "Spécialistes dans la conception de bâtiments commerciaux, bureaux, boutiques et bâtiments publics. Nous créons des espaces pratiques et attrayants qui renforcent la valeur de votre projet commercial."
+  },
+  "processSteps": [
+    {
+      "title": {
+        "ar": "دراسة الجدوى",
+        "en": "Feasibility Study",
+        "fr": "Étude de Faisabilité"
+      },
+      "description": {
+        "ar": "نحلل متطلبات المشروع والقيود",
+        "en": "We analyze project requirements and constraints",
+        "fr": "Nous analysons les exigences et contraintes du projet"
+      }
+    },
+    {
+      "title": {
+        "ar": "التصميم المفاهيمي",
+        "en": "Conceptual Design",
+        "fr": "Conception Conceptuelle"
+      },
+      "description": {
+        "ar": "نطور فكرة التصميم الأساسية",
+        "en": "We develop the core design concept",
+        "fr": "Nous développons le concept de conception de base"
+      }
+    },
+    {
+      "title": {
+        "ar": "التصميم النهائي",
+        "en": "Final Design",
+        "fr": "Conception Finale"
+      },
+      "description": {
+        "ar": "نكمل جميع تفاصيل التصميم",
+        "en": "We complete all design details",
+        "fr": "Nous complétons tous les détails de conception"
+      }
+    }
+  ],
+  "comingSoon": false,
+  "order": 2
+}

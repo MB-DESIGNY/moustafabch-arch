@@ -1,0 +1,25 @@
+---
+// FunfactItem Component
+// Displays a single funfact/statistic with counter
+
+export interface Props {
+  count: number;
+  suffix?: string;
+  label: string;
+  wowDelay?: string;
+}
+
+const { 
+  count, 
+  suffix = '', 
+  label,
+  wowDelay = '.2s'
+} = Astro.props;
+---
+
+<div class="col-lg-3 col-md-6">
+  <div class="item wow fadeInUp" data-wow-delay={wowDelay}>
+    <h2><span class="count">{count}</span>{suffix}</h2>
+    <p>{label}</p>
+  </div>
+</div>

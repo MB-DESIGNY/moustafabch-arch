@@ -1,0 +1,47 @@
+---
+// ExperienceItem Component
+// Displays a single experience entry with title, period, and bullet points
+
+export interface Props {
+  iconSrc: string;
+  title: string;
+  period: string;
+  points: string[];
+  logoSrc?: string;
+  wowDelay?: string;
+}
+
+const { 
+  iconSrc, 
+  title, 
+  period, 
+  points,
+  logoSrc,
+  wowDelay = '.3s'
+} = Astro.props;
+---
+
+<div class="content-item wow fadeInUp" data-wow-delay={wowDelay}>
+  <div class="head">
+    <h4>
+      <img src={iconSrc} alt="icon" />
+      {title}
+    </h4>
+    <span>{period}</span>
+  </div>
+  <div class="text">
+    <ul class="list">
+      {points.map((point) => (
+        <li>
+          <i class="fa-solid fa-circle-chevron-right"></i>
+          {point}
+        </li>
+      ))}
+    </ul>
+    {logoSrc && (
+      <div class="logo">
+        <img src={logoSrc} alt="img" />
+      </div>
+    )}
+  </div>
+</div>

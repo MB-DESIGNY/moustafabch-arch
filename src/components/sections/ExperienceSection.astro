@@ -1,0 +1,86 @@
+---
+// ExperienceSection Component
+// Experience/Resume section with work history
+
+import ExperienceItem from '../ui/ExperienceItem.astro';
+import SectionTitle from '../ui/SectionTitle.astro';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  experiences?: Array<{
+    iconSrc: string;
+    title: string;
+    period: string;
+    points: string[];
+    logoSrc?: string;
+  }>;
+}
+
+const {
+  title = 'My Work Experience',
+  subtitle = 'RESUME',
+  experiences = [
+    {
+      iconSrc: '/assets/img/icon/32.svg',
+      title: 'Senior Architect - Design Lead',
+      period: '2017 - Present (7 Years)',
+      points: [
+        'Leading architectural design projects for residential and commercial clients',
+        'Managing real estate marketing visualizations and presentations'
+      ],
+      logoSrc: '/assets/img/project/12.png'
+    },
+    {
+      iconSrc: '/assets/img/icon/32.svg',
+      title: 'Architectural Designer',
+      period: '2014 - 2016',
+      points: [
+        'Designed villa plans and social housing schemes',
+        'Created detailed architectural renderings and presentations'
+      ],
+      logoSrc: '/assets/img/project/13.png'
+    },
+    {
+      iconSrc: '/assets/img/icon/32.svg',
+      title: 'Junior Architect',
+      period: '2012 - 2013',
+      points: [
+        'Assisted in design development for various projects',
+        'Prepared technical drawings and documentation'
+      ],
+      logoSrc: '/assets/img/project/14.png'
+    }
+  ]
+} = Astro.props;
+---
+
+<section class="experience-section experience-3 section-padding fix">
+  {/* Decorative Shapes */}
+  <div class="random-shape float-bob-x">
+    <img src="/assets/img/shape/star-5.png" alt="img" />
+  </div>
+  
+  <div class="container">
+    <SectionTitle 
+      title={title}
+      subtitle={subtitle}
+      iconSrc="/assets/img/icon/32.svg"
+      align="center"
+      style="style-3"
+    />
+    
+    <div class="experience-main-wrapper">
+      {experiences.map((exp, index) => (
+        <ExperienceItem 
+          iconSrc={exp.iconSrc}
+          title={exp.title}
+          period={exp.period}
+          points={exp.points}
+          logoSrc={exp.logoSrc}
+          wowDelay={`${0.3 + (index * 0.3)}s`}
+        />
+      ))}
+    </div>
+  </div>
+</section>

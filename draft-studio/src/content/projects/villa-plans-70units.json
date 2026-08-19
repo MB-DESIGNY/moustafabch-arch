@@ -1,0 +1,39 @@
+{
+  "title": {
+    "ar": "مخططات فيلات - 70+ وحدة",
+    "en": "Villa Plans - 70+ Units",
+    "fr": "Plans de Villas - 70+ Unités"
+  },
+  "slug": "villa-plans-70units",
+  "category": "residential",
+  "coverImage": "/assets/img/projects/villa-plans-cover.jpg",
+  "gallery": [
+    "/assets/img/projects/villa-1.jpg",
+    "/assets/img/projects/villa-2.jpg",
+    "/assets/img/projects/villa-3.jpg"
+  ],
+  "client": "عملاء خاصون",
+  "location": {
+    "ar": "الجزائر",
+    "en": "Algeria",
+    "fr": "Algérie"
+  },
+  "year": "2019-2024",
+  "tools": ["AutoCAD", "Photoshop", "SketchUp"],
+  "summary": {
+    "ar": "تصميم أكثر من 70 وحدة فيلية بمساحات وتصاميم متنوعة، تجمع بين الحداثة والوظيفة.",
+    "en": "Design of over 70 villa units with diverse areas and designs, combining modernity and functionality.",
+    "fr": "Conception de plus de 70 unités de villas avec des surfaces et conceptions variées, alliant modernité et fonctionnalité."
+  },
+  "challenge": {
+    "ar": "تلبية احتياجات عائلات متنوعة مع الحفاظ على هوية تصميمية موحدة",
+    "en": "Meeting the needs of diverse families while maintaining a unified design identity",
+    "fr": "Répondre aux besoins de familles diverses tout en maintenant une identité de conception unifiée"
+  },
+  "outcome": {
+    "ar": "نجاح المشروع في تقديم حلول سكنية عصرية تلبي توقعات العملاء",
+    "en": "The project successfully delivered modern housing solutions meeting client expectations",
+    "fr": "Le projet a réussi à fournir des solutions de logement modernes répondant aux attentes des clients"
+  },
+  "featured": true
+}

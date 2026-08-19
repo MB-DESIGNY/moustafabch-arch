@@ -1,0 +1,46 @@
+---
+title:
+  ar: "الإظهار المعماري ثلاثي الأبعاد"
+  en: "3D Architectural Rendering"
+  fr: "Rendu Architectural 3D"
+slug: "3d-architectural-rendering"
+icon: "/assets/img/icons/service-7.svg"
+shortDescription:
+  ar: "تصورات ثلاثية الأبعاد واقعية لمشاريعك المعمارية"
+  en: "Realistic 3D visualizations for your architectural projects"
+  fr: "Visualisations 3D réalistes pour vos projets architecturaux"
+fullDescription:
+  ar: "خدمة إظهار معماري متقدمة باستخدام أحدث برامج الـ 3D، لتقديم تصورات واقعية دقيقة لمشاريعك قبل تنفيذها، تساعدك على اتخاذ القرارات الصحيحة وإبهار العملاء."
+  en: "Advanced architectural rendering service using the latest 3D software, to provide accurate realistic visualizations of your projects before execution, helping you make right decisions and impress clients."
+  fr: "Service de rendu architectural avancé utilisant les derniers logiciels 3D, pour fournir des visualisations réalistes précises de vos projets avant exécution, vous aidant à prendre les bonnes décisions et impressionner les clients."
+processSteps:
+  - title:
+      ar: "النمذجة ثلاثية الأبعاد"
+      en: "3D Modeling"
+      fr: "Modélisation 3D"
+    description:
+      ar: "بناء نموذج رقمي دقيق للمشروع"
+      en: "Building an accurate digital model of the project"
+      fr: "Construction d'un modèle numérique précis du projet"
+  - title:
+      ar: "إضافة الخامات والإضاءة"
+      en: "Adding Materials and Lighting"
+      fr: "Ajout de Matériaux et Éclairage"
+    description:
+      ar: "تطبيق الخامات الواقعية وأنظمة الإضاءة الطبيعية والصناعية"
+      en: "Applying realistic materials and natural/artificial lighting systems"
+      fr: "Application de matériaux réalistes et systèmes d'éclairage naturel/artificiel"
+  - title:
+      ar: "التصيير والإخراج"
+      en: "Rendering and Output"
+      fr: "Rendu et Sortie"
+    description:
+      ar: "إنتاج صور عالية الدقة وفيديوهات جولة افتراضية"
+      en: "Producing high-resolution images and virtual tour videos"
+      fr: "Production d'images haute résolution et vidéos de visite virtuelle"
+gallery:
+  - "/assets/img/projects/3d-1.jpg"
+  - "/assets/img/projects/3d-2.jpg"
+comingSoon: true
+order: 7
+---

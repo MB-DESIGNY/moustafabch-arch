@@ -1,0 +1,59 @@
+{
+  "title": {
+    "ar": "إظهار المخططات بالفوتوشوب",
+    "en": "Photoshop Rendering for Floor Plans",
+    "fr": "Rendu Photoshop pour Plans d'Étage"
+  },
+  "slug": "photoshop-rendering",
+  "icon": "/assets/img/icons/service-6.svg",
+  "shortDescription": {
+    "ar": "تحويل المخططات إلى صور واقعية",
+    "en": "Transform floor plans into realistic images",
+    "fr": "Transformez les plans en images réalistes"
+  },
+  "fullDescription": {
+    "ar": "نحول المخططات المعمارية الثنائية الأبعاد إلى إظهارات فوتوشوب واقعية تساعد العملاء على تخيص المساحات قبل البناء.",
+    "en": "We transform 2D architectural floor plans into realistic Photoshop renderings that help clients visualize spaces before construction.",
+    "fr": "Nous transformons les plans d'étage architecturaux 2D en rendus Photoshop réalistes qui aident les clients à visualiser les espaces avant la construction."
+  },
+  "processSteps": [
+    {
+      "title": {
+        "ar": "استلام المخطط",
+        "en": "Plan Reception",
+        "fr": "Réception du Plan"
+      },
+      "description": {
+        "ar": "نستلم ملف المخطط الأصلي",
+        "en": "We receive the original plan file",
+        "fr": "Nous recevons le fichier de plan original"
+      }
+    },
+    {
+      "title": {
+        "ar": "إضافة الخامات",
+        "en": "Adding Materials",
+        "fr": "Ajout des Matériaux"
+      },
+      "description": {
+        "ar": "نطبق الخامات والألوان",
+        "en": "We apply materials and colors",
+        "fr": "Nous appliquons matériaux et couleurs"
+      }
+    },
+    {
+      "title": {
+        "ar": "الإضاءة واللمسات",
+        "en": "Lighting and Finishing",
+        "fr": "Éclairage et Finitions"
+      },
+      "description": {
+        "ar": "نضيف الإضاءة والتفاصيل النهائية",
+        "en": "We add lighting and final details",
+        "fr": "Nous ajoutons éclairage et détails finaux"
+      }
+    }
+  ],
+  "comingSoon": false,
+  "order": 6
+}

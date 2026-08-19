@@ -1,0 +1,38 @@
+{
+  "title": {
+    "ar": "محطة بحرية - بجاية",
+    "en": "Maritime Station - Bejaia",
+    "fr": "Station Maritime - Bejaia"
+  },
+  "slug": "maritime-station-bejaia",
+  "category": "commercial",
+  "coverImage": "/assets/img/projects/maritime-station-cover.jpg",
+  "gallery": [
+    "/assets/img/projects/maritime-1.jpg",
+    "/assets/img/projects/maritime-2.jpg"
+  ],
+  "client": "مؤسسة ميناء بجاية",
+  "location": {
+    "ar": "بجاية، الجزائر",
+    "en": "Bejaia, Algeria",
+    "fr": "Bejaia, Algérie"
+  },
+  "year": "2019-2020",
+  "tools": ["AutoCAD", "Revit", "Photoshop"],
+  "summary": {
+    "ar": "تصميم محطة بحرية متكاملة لخدمة المسافرين والبضائع",
+    "en": "Design of a comprehensive maritime station for passenger and cargo services",
+    "fr": "Conception d'une station maritime complète pour les services de passagers et de fret"
+  },
+  "challenge": {
+    "ar": "التكامل مع البيئة الساحلية والالتزام بالمعايير البحرية",
+    "en": "Integration with the coastal environment and compliance with maritime standards",
+    "fr": "Intégration avec l'environnement côtier et respect des normes maritimes"
+  },
+  "outcome": {
+    "ar": "إنشاء مرفق حديث يلبي احتياجات الميناء",
+    "en": "Creation of a modern facility meeting port requirements",
+    "fr": "Création d'une installation moderne répondant aux exigences du port"
+  },
+  "featured": true
+}

@@ -1,0 +1,78 @@
+---
+// ProjectsSection Component
+// Projects/Portfolio section displaying project cards
+
+import ProjectCard from '../ui/ProjectCard.astro';
+import SectionTitle from '../ui/SectionTitle.astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  projects: CollectionEntry<'projects'>[];
+  ctaText?: string;
+  ctaHref?: string;
+}
+
+const {
+  title = 'My Recent Working Project',
+  subtitle = 'CASE STUDIES',
+  projects,
+  ctaText = 'View All Project',
+  ctaHref = '/portfolio'
+} = Astro.props;
+---
+
+<section class="project-section project-3 section-padding section-bg fix">
+  {/* Decorative Shapes */}
+  <div class="scale-shape float-bob-x">
+    <img src="/assets/img/shape/Scales-3.png" alt="img" />
+  </div>
+  <div class="regulation-shape float-bob-y">
+    <img src="/assets/img/shape/regulation.png" alt="img" />
+  </div>
+  
+  <div class="container">
+    <div class="section-title-area">
+      <SectionTitle 
+        title={title}
+        subtitle={subtitle}
+        iconSrc="/assets/img/icon/32.svg"
+        style="style-3"
+      />
+      <a href={ctaHref} class="theme-btn">
+        {ctaText}
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+    
+    <div class="project-wrapper-3">
+      <div class="main-box">
+        {/* Active/Featured Project */}
+        <div class="box-2 active wow fadeInUp">
+          <div class="project-content">
+            <div class="text">
+              <span>{projects[0]?.data.category || 'Architecture'}</span>
+              <h4><a href={`/portfolio/${projects[0]?.slug}`}>{projects[0]?.data.title}</a></h4>
+            </div>
+            <a href={`/portfolio/${projects[0]?.slug}`} class="icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        {/* Additional Projects */}
+        {projects.slice(1, 4).map((project, index) => (
+          <ProjectCard 
+            imageSrc={project.data.imageSrc || '/assets/img/project/default.jpg'}
+            category={project.data.category}
+            title={project.data.title}
+            href={`/portfolio/${project.slug}`}
+            bgClass={`bg-${index + 1}`}
+            wowDelay={`${0.2 + (index * 0.2)}s`}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,168 @@
+---
+// Footer Component
+// Main site footer with newsletter, links and contact info
+
+export interface Props {
+  logoSrc: string;
+  socialLinks?: Array<{ href: string; icon: string }>;
+  newsletterTitle?: string;
+  newsletterDescription?: string;
+  usefulLinks?: Array<{ label: string; href: string }>;
+  serviceLinks?: Array<{ label: string; href: string }>;
+  location?: string;
+  email?: string;
+  phone?: string;
+  copyrightText?: string;
+}
+
+const {
+  logoSrc,
+  socialLinks = [
+    { href: '#', icon: 'fa-brands fa-linkedin' },
+    { href: '#', icon: 'fa-brands fa-twitter' },
+    { href: '#', icon: 'fa-brands fa-instagram' },
+    { href: '#', icon: 'fa-brands fa-facebook-f' }
+  ],
+  newsletterTitle = 'Subcribe To Our Newsletter',
+  newsletterDescription = 'Stay updated with our latest projects and news',
+  usefulLinks = [
+    { label: 'About Us', href: '/about' },
+    { label: 'Our Blog', href: '/blog' },
+    { label: 'Contact Us', href: '/contact' },
+    { label: 'Portfolio', href: '/portfolio' },
+    { label: 'FAQ', href: '/faq' }
+  ],
+  serviceLinks = [
+    { label: 'Architectural Design', href: '/services/architectural-design' },
+    { label: 'Visual Identity', href: '/services/visual-identity' },
+    { label: 'Company Profile', href: '/services/company-profile' },
+    { label: 'Catalog Design', href: '/services/catalog-design' },
+    { label: 'Photoshop Rendering', href: '/services/photoshop-rendering' }
+  ],
+  location = 'Riyadh, Saudi Arabia',
+  email = 'info@draftstudio.com',
+  phone = '+966 50 000 0000',
+  copyrightText = 'Draft Studio. All rights reserved.'
+} = Astro.props;
+---
+
+<footer class="footer-section footer-3 fix section-bg fix">
+  <div class="container">
+    {/* Footer Top - Logo + Social */}
+    <div class="footer-top">
+      <a href="/" class="logo">
+        <img src={logoSrc} alt="img" />
+      </a>
+      <div class="social-icon">
+        <span>Follow On:</span>
+        {socialLinks.map((link) => (
+          <a href={link.href}>
+            <i class={link.icon}></i>
+          </a>
+        ))}
+      </div>
+    </div>
+    
+    {/* Footer Widget Wrapper */}
+    <div class="footer-widget-wrapper-3">
+      <div class="row">
+        {/* Newsletter Column */}
+        <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="single-footer-main-item">
+            <div class="single-footer-widget">
+              <div class="footer-newsletter">
+                <h3>{newsletterTitle}</h3>
+                <p>{newsletterDescription}</p>
+                <form action="#">
+                  <div class="form-clt">
+                    <input type="text" name="email" id="email" placeholder="Your Email Address" />
+                    <button type="submit" class="theme-btn">SUBSCRIBE</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Useful Links + Service Links Column */}
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          <div class="single-footer-main-item style-2">
+            <div class="single-footer-widget">
+              <div class="widget-title">
+                <h5>USEFUL LINKS</h5>
+              </div>
+              <ul class="footer-list-2">
+                {usefulLinks.map((link) => (
+                  <li><a href={link.href}>{link.label}</a></li>
+                ))}
+              </ul>
+            </div>
+            <div class="single-footer-widget">
+              <div class="widget-title">
+                <h5>OUR SERVICES</h5>
+              </div>
+              <ul class="footer-list-2">
+                {serviceLinks.map((link) => (
+                  <li><a href={link.href}>{link.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        {/* Contact Info Column */}
+        <div class="col-xl-4 col-lg-3">
+          <div class="single-footer-main-item">
+            <div class="footer-contact-item">
+              <div class="contact-items">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="content">
+                  <h5>Location</h5>
+                  <h6>{location}</h6>
+                </div>
+              </div>
+              <div class="contact-items">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="content">
+                  <h5>Email Now</h5>
+                  <h6>
+                    <a href={`mailto:${email}`}>{email}</a>
+                  </h6>
+                </div>
+              </div>
+              <div class="contact-items mb-0">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="content">
+                  <h5>Phone Number</h5>
+                  <h6>
+                    <a href={`tel:${phone}`}>{phone}</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {/* Footer Bottom */}
+  <div class="footer-bottom style-3">
+    <div class="container">
+      <div class="footer-bottom-wrapper">
+        <p>Copyright© <span>Draft Studio</span></p>
+        <ul class="footer-list">
+          <li><a href="/contact">Terms & Conditions</a></li>
+          <li><a href="/contact">Privacy Policy</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
