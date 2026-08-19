@@ -1,0 +1,12 @@
+---
+// BackToTop Component - Extracted from index.html line 83-86
+interface Props {
+  label?: string;
+}
+
+const { label = "Back to Top" } = Astro.props;
+---
+
+<button id="back-top" class="back-to-top" aria-label={label}>
+  <i class="fa-regular fa-arrow-up"></i>
+</button>

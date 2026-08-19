@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Draft Studio | Mustafa Benchabane - Architecte",
+    "description": "Mustafa Benchabane - Architecte avec 7 ans d'expérience, spécialisé dans la conception architecturale et le marketing immobilier en Arabie Saoudite, Russie et Algérie"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Architecte",
+    "title": "Nous Concevons Votre Avenir Urbain",
+    "description": "7 ans d'expérience en conception architecturale et visualisation immobilière. Nous fournissons des solutions créatives pour les projets résidentiels et commerciaux en Arabie Saoudite, Russie et Algérie.",
+    "cta": "Réservez Votre Consultation"
+  },
+  "feature": {
+    "title": "Pourquoi Choisir Draft Studio",
+    "card1": {
+      "title": "Conception Créative",
+      "description": "Solutions de design innovantes alliant beauté et fonctionnalité"
+    },
+    "card2": {
+      "title": "Exécution Précise",
+      "description": "Attention aux moindres détails pour assurer une exécution de qualité"
+    },
+    "card3": {
+      "title": "Livraison Ponctuelle",
+      "description": "Livraison des projets dans les délais convenus"
+    }
+  },
+  "about": {
+    "title": "À Propos de Mustafa Benchabane",
+    "description": "Architecte algérien avec 7 ans d'expérience, spécialisé dans la conception architecturale de bâtiments résidentiels et commerciaux, et identités visuelles pour cabinets d'ingénierie. A travaillé sur plus de 297 projets réussis en Algérie, Arabie Saoudite et Russie.",
+    "experience": "7 Ans d'Expérience",
+    "projects": "297+ Projets Réalisés",
+    "clients": "138 Clients Satisfaits"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions Architecturales Complètes",
+    "comingSoon": "Bientôt Disponible"
+  },
+  "portfolio": {
+    "title": "Derniers Projets",
+    "subtitle": "Notre Portfolio",
+    "viewAll": "Voir Tous les Projets",
+    "viewDetails": "Détails du Projet"
+  },
+  "testimonials": {
+    "title": "Témoignages Clients",
+    "subtitle": "Ce Que Disent Nos Clients"
+  },
+  "funfact": {
+    "yearsExperience": "Ans d'Expérience",
+    "completedProjects": "Projets Réalisés",
+    "happyClients": "Clients Satisfaits",
+    "satisfactionRate": "Taux de Satisfaction"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous Sommes Là Pour Vous Aider",
+    "name": "Votre Nom",
+    "email": "Adresse E-mail",
+    "phone": "Numéro de Téléphone",
+    "message": "Votre Message",
+    "send": "Envoyer le Message",
+    "address": "Adresse",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail"
+  },
+  "footer": {
+    "rights": "Tous Droits Réservés",
+    "designedBy": "Conçu par"
+  },
+  "common": {
+    "loading": "Chargement",
+    "search": "Rechercher...",
+    "close": "Fermer",
+    "menu": "Menu",
+    "backToTop": "Retour en Haut"
+  }
+}

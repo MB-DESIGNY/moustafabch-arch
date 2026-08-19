@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0",
+    "swiper": "^14.1.0",
+    "wow.js": "^1.2.2"
+  }
+}

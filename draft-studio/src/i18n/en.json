@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Draft Studio | Mustafa Benchabane - Architect",
+    "description": "Mustafa Benchabane - Architect with 7 years of experience, specializing in architectural design and real estate marketing in Saudi Arabia, Russia, and Algeria"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Architect",
+    "title": "We Design Your Urban Future",
+    "description": "7 years of experience in architectural design and real estate visualization. We provide creative solutions for residential and commercial projects in Saudi Arabia, Russia, and Algeria.",
+    "cta": "Book Your Consultation"
+  },
+  "feature": {
+    "title": "Why Choose Draft Studio",
+    "card1": {
+      "title": "Creative Design",
+      "description": "Innovative design solutions that combine beauty and function"
+    },
+    "card2": {
+      "title": "Precision Execution",
+      "description": "Attention to the finest details to ensure quality execution"
+    },
+    "card3": {
+      "title": "On-Time Delivery",
+      "description": "Delivering projects at the agreed time"
+    }
+  },
+  "about": {
+    "title": "About Mustafa Benchabane",
+    "description": "Algerian architect with 7 years of experience, specializing in architectural design for residential and commercial buildings, and visual identities for engineering firms. Worked on over 297 successful projects across Algeria, Saudi Arabia, and Russia.",
+    "experience": "7 Years Experience",
+    "projects": "297+ Completed Projects",
+    "clients": "138 Happy Clients"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Architectural Solutions",
+    "comingSoon": "Coming Soon"
+  },
+  "portfolio": {
+    "title": "Latest Projects",
+    "subtitle": "Our Portfolio",
+    "viewAll": "View All Projects",
+    "viewDetails": "Project Details"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What Our Clients Say"
+  },
+  "funfact": {
+    "yearsExperience": "Years Experience",
+    "completedProjects": "Completed Projects",
+    "happyClients": "Happy Clients",
+    "satisfactionRate": "Satisfaction Rate"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "We're Here to Help",
+    "name": "Your Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Your Message",
+    "send": "Send Message",
+    "address": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "designedBy": "Designed by"
+  },
+  "common": {
+    "loading": "Loading",
+    "search": "Search...",
+    "close": "Close",
+    "menu": "Menu",
+    "backToTop": "Back to Top"
+  }
+}

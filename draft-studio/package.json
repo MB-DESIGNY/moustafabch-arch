@@ -1,0 +1,27 @@
+{
+  "name": "draft-studio",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^26.2.0",
+    "astro": "^7.2.4",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0",
+    "swiper": "^14.1.0",
+    "wow.js": "^1.2.2"
+  }
+}
