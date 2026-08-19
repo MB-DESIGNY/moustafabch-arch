@@ -1,0 +1,24 @@
+// Theme colors for Draft Studio - replaces color.css
+// Based on design.md section 3 color remap table
+
+:root {
+  /* Original variables kept, values updated to Draft Studio brand */
+  --theme: #00C4B5;           /* Teal - primary accent (was #BFF747 neon green) */
+  --bg: #0E1030;              /* Deep Navy background (was #171914) */
+  --bg-2: #060606;            /* Dark navy/black (was #060606) */
+  --body: #0E1030;            /* Main body background - Deep Navy */
+  --text: #C1C1C1;            /* Light gray text - unchanged */
+  --border: 1.5px solid rgba(193, 193, 193, 0.16);  /* Unchanged */
+  --border-2: 1.5px solid #00C4B5;  /* Teal border accent (was #28E98C) */
+  --border-3: 1.5px solid rgba(102, 102, 102, 0.16);  /* Unchanged */
+  
+  /* Additional theme colors */
+  --white: #fff;
+  --black: #000;
+  --header: #fff;
+  --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+  
+  /* CTA colors */
+  --cta-primary: #2F3EC0;     /* Cobalt - primary CTA buttons */
+  --cta-hover: #00C4B5;       /* Teal - hover state */
+}
