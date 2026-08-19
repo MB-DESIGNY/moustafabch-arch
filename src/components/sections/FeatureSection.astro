@@ -1,0 +1,56 @@
+---
+// FeatureSection Component
+// Features section with multiple feature cards
+
+import FeatureCard from '../ui/FeatureCard.astro';
+
+export interface Props {
+  features?: Array<{
+    iconSrc: string;
+    title: string;
+    description: string;
+    href?: string;
+  }>;
+}
+
+const {
+  features = [
+    {
+      iconSrc: '/assets/img/icon/33.svg',
+      title: 'Best Client Support',
+      description: 'We provide exceptional support to all our clients',
+      href: '/contact'
+    },
+    {
+      iconSrc: '/assets/img/icon/34.svg',
+      title: 'Certified Professionals',
+      description: 'Our team consists of certified architecture experts',
+      href: '/contact'
+    },
+    {
+      iconSrc: '/assets/img/icon/35.svg',
+      title: 'Professional Services',
+      description: 'We deliver professional architectural and marketing services',
+      href: '/contact'
+    }
+  ]
+} = Astro.props;
+---
+
+<section class="feature-section-2">
+  <div class="container">
+    <div class="feature-wrapper">
+      <div class="row g-3">
+        {features.map((feature, index) => (
+          <FeatureCard 
+            iconSrc={feature.iconSrc}
+            title={feature.title}
+            description={feature.description}
+            href={feature.href}
+            wowDelay={`${0.3 + (index * 0.3)}s`}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

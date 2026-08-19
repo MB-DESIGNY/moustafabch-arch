@@ -1,0 +1,21 @@
+{
+  "title": {
+    "ar": "الإظهار المعماري ثلاثي الأبعاد",
+    "en": "3D Architectural Rendering",
+    "fr": "Rendu Architectural 3D"
+  },
+  "slug": "3d-architectural-rendering",
+  "icon": "/assets/img/icons/service-7.svg",
+  "shortDescription": {
+    "ar": "تصورات ثلاثية الأبعاد واقعية لمشروعك",
+    "en": "Realistic 3D visualizations for your project",
+    "fr": "Visualisations 3D réalistes pour votre projet"
+  },
+  "fullDescription": {
+    "ar": "خدمة الإظهار المعماري ثلاثي الأبعاد تنتج صورًا واقعية مذهلة تساعدك على عرض مشروعك قبل بنائه. (هذه الخدمة قادمة قريبًا)",
+    "en": "Our 3D architectural rendering service produces stunning realistic images that help you showcase your project before construction. (This service is coming soon)",
+    "fr": "Notre service de rendu architectural 3D produit des images réalistes époustouflantes qui vous aident à présenter votre projet avant la construction. (Ce service sera bientôt disponible)"
+  },
+  "comingSoon": true,
+  "order": 7
+}

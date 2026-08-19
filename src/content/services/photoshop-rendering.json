@@ -1,0 +1,46 @@
+---
+title:
+  ar: "إظهار المخططات بالفوتوشوب"
+  en: "Photoshop Rendering"
+  fr: "Rendu Photoshop"
+slug: "photoshop-rendering"
+icon: "/assets/img/icons/service-6.svg"
+shortDescription:
+  ar: "تحويل المخططات الهندسية إلى صور واقعية جذابة"
+  en: "Transforming engineering plans into attractive realistic images"
+  fr: "Transformation de plans techniques en images réalistes attrayantes"
+fullDescription:
+  ar: "نقدم خدمات إظهار معماري متقدمة باستخدام الفوتوشوب، لتحويل المخططات الثنائية الأبعاد إلى صور واقعية تساعدك على عرض مشاريعك بشكل احترافي وجذاب."
+  en: "We provide advanced architectural rendering services using Photoshop, to transform 2D plans into realistic images that help you showcase your projects professionally and attractively."
+  fr: "Nous fournissons des services de rendu architectural avancés utilisant Photoshop, pour transformer des plans 2D en images réalistes qui vous aident à présenter vos projets de manière professionnelle et attrayante."
+processSteps:
+  - title:
+      ar: "استيراد المخطط"
+      en: "Plan Import"
+      fr: "Import du Plan"
+    description:
+      ar: "استلام المخطط الهندسي وتحضيره للمعالجة"
+      en: "Receiving and preparing the engineering plan for processing"
+      fr: "Réception et préparation du plan technique pour traitement"
+  - title:
+      ar: "إضافة العناصر"
+      en: "Adding Elements"
+      fr: "Ajout d'Éléments"
+    description:
+      ar: "إضافة الأثاث، النباتات، والإضاءة"
+      en: "Adding furniture, plants, and lighting"
+      fr: "Ajout de meubles, plantes et éclairage"
+  - title:
+      ar: "اللمسات النهائية"
+      en: "Final Touches"
+      fr: "Touches Finales"
+    description:
+      ar: "تحسين الألوان والتباين والإخراج النهائي"
+      en: "Enhancing colors, contrast, and final output"
+      fr: "Amélioration des couleurs, contraste et sortie finale"
+gallery:
+  - "/assets/img/projects/rendering-1.jpg"
+  - "/assets/img/projects/rendering-2.jpg"
+comingSoon: false
+order: 6
+---

@@ -1,0 +1,51 @@
+---
+// ServiceCard Component
+// Displays a single service with icon, title, description and link
+
+export interface Props {
+  iconSrc: string;
+  title: string;
+  description: string;
+  href: string;
+  comingSoon?: boolean;
+  wowDelay?: string;
+}
+
+const { 
+  iconSrc, 
+  title, 
+  description, 
+  href, 
+  comingSoon = false,
+  wowDelay = '.3s'
+} = Astro.props;
+---
+
+<div class="col-lg-4 col-md-6">
+  <div class="service-item wow fadeInUp" data-wow-delay={wowDelay}>
+    <div class="icon">
+      <img src={iconSrc} alt="" />
+    </div>
+    <div class="content">
+      <h4>
+        {comingSoon ? (
+          <span>{title}</span>
+        ) : (
+          <a href={href}>{title}</a>
+        )}
+      </h4>
+      <p>{description}</p>
+    </div>
+    {comingSoon ? (
+      <span class="theme-btn disabled">
+        Coming Soon
+        <i class="fa-solid fa-lock"></i>
+      </span>
+    ) : (
+      <a href={href} class="theme-btn">
+        Read More
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    )}
+  </div>
+</div>

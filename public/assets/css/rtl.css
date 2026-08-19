@@ -1,0 +1,87 @@
+/* RTL Overrides for Arabic Locale - Per design.md §4 */
+
+[dir="rtl"] {
+  /* Text alignment */
+  text-align: right;
+}
+
+/* Header navigation */
+[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+}
+
+[dir="rtl"] .nav-item {
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
+/* Hero section */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+/* Cards and grids */
+[dir="rtl"] .service-card,
+[dir="rtl"] .project-card {
+  text-align: right;
+}
+
+/* Icons with direction */
+[dir="rtl"] .fa-arrow-right {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .fa-arrow-left {
+  transform: rotate(180deg);
+}
+
+/* Offcanvas menu slide direction */
+[dir="rtl"] .offcanvas-start {
+  right: 0;
+  left: auto;
+  transform: translateX(100%);
+}
+
+[dir="rtl"] .offcanvas-start.show {
+  transform: translateX(0);
+}
+
+/* Breadcrumb separators */
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-right: 0.5rem;
+  padding-left: 0;
+  content: "/";
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+/* Form elements */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: right;
+}
+
+/* Buttons with icons */
+[dir="rtl"] .btn i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Testimonial slider arrows */
+[dir="rtl"] .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+[dir="rtl"] .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+/* Back to top button */
+[dir="rtl"] .back-to-top {
+  left: 30px;
+  right: auto;
+}

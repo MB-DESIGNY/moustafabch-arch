@@ -1,0 +1,38 @@
+{
+  "title": {
+    "ar": "مركز القيادة العسكرية - قالمة",
+    "en": "Military Command Center - Guelma",
+    "fr": "Centre de Commandement Militaire - Guelma"
+  },
+  "slug": "military-command-center-guelma",
+  "category": "commercial",
+  "coverImage": "/assets/img/projects/military-command-cover.jpg",
+  "gallery": [
+    "/assets/img/projects/military-1.jpg",
+    "/assets/img/projects/military-2.jpg"
+  ],
+  "client": "وزارة الدفاع الوطني",
+  "location": {
+    "ar": "قالمة، الجزائر",
+    "en": "Guelma, Algeria",
+    "fr": "Guelma, Algérie"
+  },
+  "year": "2020-2021",
+  "tools": ["AutoCAD", "Revit", "3ds Max"],
+  "summary": {
+    "ar": "تصميم مركز قيادة عسكري متكامل بمرافق متطورة",
+    "en": "Design of a comprehensive military command center with advanced facilities",
+    "fr": "Conception d'un centre de commandement militaire complet avec des installations avancées"
+  },
+  "challenge": {
+    "ar": "الالتزام بمعايير الأمان العالية والمتطلبات الأمنية الخاصة",
+    "en": "Complying with high safety standards and specific security requirements",
+    "fr": "Respecter les normes de sécurité élevées et les exigences de sécurité spécifiques"
+  },
+  "outcome": {
+    "ar": "إنجاز المشروع بنجاح وتلبية جميع المتطلبات العسكرية",
+    "en": "Successful project completion meeting all military requirements",
+    "fr": "Réalisation réussie du projet répondant à toutes les exigences militaires"
+  },
+  "featured": true
+}

@@ -1,0 +1,90 @@
+---
+import type { AstroGlobal } from 'astro';
+
+interface Props {
+  lang: string;
+  dir?: 'ltr' | 'rtl';
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { lang, dir = 'rtl', title, description, image } = Astro.props;
+
+// Determine asset paths based on Astro's public folder
+const cssPath = '/assets/css/main.css';
+const themePath = '/assets/css/theme.css'; // We will create this for color remap
+const jsLibs = [
+  '/assets/js/jquery-3.7.1.min.js',
+  '/assets/js/bootstrap.bundle.min.js',
+  '/assets/js/swiper-bundle.min.js',
+  '/assets/js/wow.min.js',
+  '/assets/js/counterup.min.js',
+  '/assets/js/waypoints.min.js',
+  '/assets/js/main.js'
+];
+---
+
+<!doctype html>
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description || "Draft Studio - Architectural Design & Real Estate Marketing"} />
+    <title>{title}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Fonts (Google Fonts + Local Webfonts if any) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href={cssPath} />
+    <link rel="stylesheet" href={themePath} />
+    
+    <!-- RTL Override if needed -->
+    {dir === 'rtl' && <link rel="stylesheet" href="/assets/css/rtl.css" />}
+  </head>
+  <body class={`bg-${dir === 'rtl' ? 'right' : 'left'}`}>
+    
+    <slot />
+
+    <!-- Scripts -->
+    {jsLibs.map((src) => (
+      <script src={src} defer></script>
+    ))}
+    
+    <!-- Initialization Script for WOW and CounterUp -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof WOW !== 'undefined') {
+          new WOW().init();
+        }
+        if (typeof $.fn.counterUp !== 'undefined') {
+          $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+          });
+        }
+        if (typeof Swiper !== 'undefined') {
+          // Initialize Swipers dynamically based on presence
+          const testimonialSwiper = document.querySelector('.testimonial-slider');
+          if (testimonialSwiper) {
+            new Swiper('.testimonial-slider', {
+              loop: true,
+              autoplay: { delay: 3000 },
+              pagination: { el: '.swiper-pagination', clickable: true },
+              navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

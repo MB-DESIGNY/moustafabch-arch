@@ -1,0 +1,98 @@
+---
+// ClientSection Component
+// Client logos section with counter
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  clientLogos?: string[];
+  counterValue?: number;
+  counterLabel?: string;
+  ctaText?: string;
+  ctaHref?: string;
+  avaterImageSrc?: string;
+}
+
+const {
+  title = 'Worked with largest Corporate Company',
+  subtitle = 'Clients',
+  description = 'We have partnered with leading companies across Saudi Arabia, Russia, and Algeria to deliver exceptional architectural and marketing solutions.',
+  clientLogos = [
+    '/assets/img/client/11.png',
+    '/assets/img/client/11.png',
+    '/assets/img/client/11.png',
+    '/assets/img/client/11.png',
+    '/assets/img/client/11.png',
+    '/assets/img/client/11.png'
+  ],
+  counterValue = 45,
+  counterLabel = 'Active Clients',
+  ctaText = 'View All Logo',
+  ctaHref = '/portfolio',
+  avaterImageSrc = '/assets/img/client/avater.png'
+} = Astro.props;
+---
+
+<section class="client-section section-padding fix">
+  <div class="container">
+    <div class="client-wrapper-2">
+      <div class="row g-4">
+        {/* Client Logos Grid */}
+        <div class="col-lg-7">
+          <div class="client-item-wrapper">
+            {clientLogos.slice(0, 3).map((logo, index) => (
+              <div 
+                class="client-item wow fadeInUp" 
+                data-wow-delay={`${0.2 + (index * 0.2)}s`}
+              >
+                <img src={logo} alt="img" />
+              </div>
+            ))}
+            
+            {/* Counter Item */}
+            <div class="client-item wow fadeInUp" data-wow-delay=".8s">
+              <div class="content">
+                <h2><span class="count">{counterValue}</span>+</h2>
+                <p>{counterLabel}</p>
+              </div>
+            </div>
+            
+            {/* CTA Item */}
+            <div class="client-item wow fadeInUp style-2" data-wow-delay=".2s">
+              <a href={ctaHref}>{ctaText}</a>
+            </div>
+            
+            {clientLogos.slice(3).map((logo, index) => (
+              <div 
+                class="client-item wow fadeInUp" 
+                data-wow-delay={`${0.4 + (index * 0.2)}s`}
+              >
+                <img src={logo} alt="img" />
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Content Column */}
+        <div class="col-lg-5">
+          <div class="client-content">
+            <div class="section-title">
+              <span class="wow fadeInUp">
+                <img src="/assets/img/shape/star-2.png" alt="icon" />
+                {subtitle}
+              </span>
+              <h2 class="wow fadeInUp" data-wow-delay=".2s">{title}</h2>
+            </div>
+            <p class="wow fadeInUp mt-3 mt-mb-0" data-wow-delay=".3s">
+              {description}
+            </p>
+            <div class="icon wow fadeInUp" data-wow-delay=".4s">
+              <img src={avaterImageSrc} alt="icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

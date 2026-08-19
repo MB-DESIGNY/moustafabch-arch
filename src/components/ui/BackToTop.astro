@@ -1,0 +1,16 @@
+---
+// BackToTop Component
+// Displays the back to top button
+
+export interface Props {
+  visible?: boolean;
+}
+
+const { visible = true } = Astro.props;
+---
+
+{visible && (
+  <button id="back-top" class="back-to-top">
+    <i class="fa-regular fa-arrow-up"></i>
+  </button>
+)}

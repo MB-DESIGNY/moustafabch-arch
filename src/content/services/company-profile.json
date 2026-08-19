@@ -1,0 +1,46 @@
+---
+title:
+  ar: "تصميم بروفايل الشركات"
+  en: "Company Profile Design"
+  fr: "Conception de Profil d'Entreprise"
+slug: "company-profile"
+icon: "/assets/img/icons/service-4.svg"
+shortDescription:
+  ar: "بروفايلات احترافية تعرض إنجازات وخبرات شركتك"
+  en: "Professional profiles showcasing your company's achievements and expertise"
+  fr: "Profils professionnels présentant les réalisations et l'expertise de votre entreprise"
+fullDescription:
+  ar: "نصمم بروفايلات شركات احترافية تجمع بين المحتوى القوي والتصميم الجذاب، لتعريف عملائك المحتملين بشركتك وإنجازاتك وقدراتك بشكل مؤثر."
+  en: "We design professional company profiles that combine strong content with attractive design, to introduce your potential clients to your company, achievements, and capabilities in an impactful way."
+  fr: "Nous concevons des profils d'entreprise professionnels qui combinent un contenu solide avec un design attrayant, pour présenter votre entreprise, vos réalisations et vos capacités à vos clients potentiels de manière impactante."
+processSteps:
+  - title:
+      ar: "جمع المحتوى"
+      en: "Content Collection"
+      fr: "Collecte de Contenu"
+    description:
+      ar: "تجميع جميع المعلومات والإنجازات والصور"
+      en: "Gathering all information, achievements, and images"
+      fr: "Rassemblement de toutes les informations, réalisations et images"
+  - title:
+      ar: "تنظيم المحتوى"
+      en: "Content Organization"
+      fr: "Organisation du Contenu"
+    description:
+      ar: "هيكلة المحتوى بطريقة منطقية وجذابة"
+      en: "Structuring content in a logical and attractive way"
+      fr: "Structuration du contenu de manière logique et attrayante"
+  - title:
+      ar: "التصميم والإخراج"
+      en: "Design and Layout"
+      fr: "Design et Mise en Page"
+    description:
+      ar: "إعداد التصميم النهائي للطباعة والنشر الرقمي"
+      en: "Preparing final design for print and digital publishing"
+      fr: "Préparation du design final pour l'impression et la publication numérique"
+gallery:
+  - "/assets/img/projects/profile-1.jpg"
+  - "/assets/img/projects/profile-2.jpg"
+comingSoon: false
+order: 4
+---

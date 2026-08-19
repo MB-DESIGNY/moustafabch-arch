@@ -1,0 +1,59 @@
+{
+  "title": {
+    "ar": "التصميم المعماري للبنايات السكنية",
+    "en": "Architectural Design for Residential Buildings",
+    "fr": "Conception Architecturale de Bâtiments Résidentiels"
+  },
+  "slug": "architectural-design-residential",
+  "icon": "/assets/img/icons/service-1.svg",
+  "shortDescription": {
+    "ar": "تصميم فيلات ومنازل عصرية تلبي احتياجاتك",
+    "en": "Modern villa and home designs that meet your needs",
+    "fr": "Conceptions modernes de villas et maisons adaptées à vos besoins"
+  },
+  "fullDescription": {
+    "ar": "نقدم خدمات تصميم معماري متكاملة للبنايات السكنية، من الفيلات الفاخرة إلى المنازل العائلية. نجمع بين الجماليات والوظيفة لنخلق مساحات معيشة مثالية.",
+    "en": "We provide comprehensive architectural design services for residential buildings, from luxury villas to family homes. We combine aesthetics and function to create ideal living spaces.",
+    "fr": "Nous fournissons des services complets de conception architecturale pour les bâtiments résidentiels, des villas de luxe aux maisons familiales. Nous combinons esthétique et fonctionnalité pour créer des espaces de vie idéaux."
+  },
+  "processSteps": [
+    {
+      "title": {
+        "ar": "الاستشارة الأولية",
+        "en": "Initial Consultation",
+        "fr": "Consultation Initiale"
+      },
+      "description": {
+        "ar": "نفهم احتياجاتك ومتطلبات المشروع",
+        "en": "We understand your needs and project requirements",
+        "fr": "Nous comprenons vos besoins et exigences du projet"
+      }
+    },
+    {
+      "title": {
+        "ar": "التصميم المبدئي",
+        "en": "Preliminary Design",
+        "fr": "Conception Préliminaire"
+      },
+      "description": {
+        "ar": "نطور المفاهيم التصميمية الأولى",
+        "en": "We develop initial design concepts",
+        "fr": "Nous développons des concepts de conception initiaux"
+      }
+    },
+    {
+      "title": {
+        "ar": "المخططات التنفيذية",
+        "en": "Execution Plans",
+        "fr": "Plans d'Exécution"
+      },
+      "description": {
+        "ar": "نعد المخططات التفصيلية للبناء",
+        "en": "We prepare detailed construction plans",
+        "fr": "Nous préparons des plans de construction détaillés"
+      }
+    }
+  ],
+  "comingSoon": false,
+  "order": 1
+}

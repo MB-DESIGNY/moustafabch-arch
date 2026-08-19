@@ -1,0 +1,38 @@
+---
+title:
+  ar: "مركز القيادة العسكرية - قالمة"
+  en: "Military Command Center - Guelma"
+  fr: "Centre de Commandement Militaire - Guelma"
+slug: "military-command-center-guelma"
+category: "commercial"
+coverImage: "/assets/img/projects/military-cover.jpg"
+gallery:
+  - "/assets/img/projects/military-1.jpg"
+  - "/assets/img/projects/military-2.jpg"
+client:
+  ar: "وزارة الدفاع الوطني"
+  en: "Ministry of National Defense"
+  fr: "Ministère de la Défense Nationale"
+location:
+  ar: "قالمة، الجزائر"
+  en: "Guelma, Algeria"
+  fr: "Guelma, Algérie"
+year: "2021"
+tools:
+  - "AutoCAD"
+  - "Revit"
+  - "3ds Max"
+summary:
+  ar: "تصميم مركز قيادة عسكري متكامل يتضمن غرف عمليات، مكاتب إدارية، ومرافق دعم لوجستي."
+  en: "Design of an integrated military command center including operations rooms, administrative offices, and logistics support facilities."
+  fr: "Conception d'un centre de commandement militaire intégré comprenant des salles d'opérations, des bureaux administratifs et des installations de soutien logistique."
+challenge:
+  ar: "تلبية المتطلبات الأمنية الصارمة مع ضمان الكفاءة الوظيفية."
+  en: "Meeting strict security requirements while ensuring functional efficiency."
+  fr: "Respecter les exigences de sécurité strictes tout en assurant l'efficacité fonctionnelle."
+outcome:
+  ar: "منشأة عسكرية حديثة تلبي أعلى معايير الأمان والكفاءة التشغيلية."
+  en: "A modern military facility meeting highest standards of safety and operational efficiency."
+  fr: "Une installation militaire moderne répondant aux plus hauts standards de sécurité et d'efficacité opérationnelle."
+featured: true
+---

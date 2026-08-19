@@ -1,0 +1,56 @@
+---
+// ContactFormSection Component
+// Contact form section
+
+export interface Props {
+  title?: string;
+  namePlaceholder?: string;
+  phonePlaceholder?: string;
+  emailPlaceholder?: string;
+  messagePlaceholder?: string;
+  submitText?: string;
+  formAction?: string;
+}
+
+const {
+  title = 'Get In Touch',
+  namePlaceholder = 'Enter Your Name',
+  phonePlaceholder = 'Enter Your Number',
+  emailPlaceholder = 'Enter Your Email',
+  messagePlaceholder = 'Enter Your Message',
+  submitText = 'Send Message',
+  formAction = '#'
+} = Astro.props;
+---
+
+<section class="contact-from-section section-bg pt-0 section-padding fix">
+  <div class="container">
+    <div class="contact-form-box">
+      <h3 class="wow fadeInUp">{title}</h3>
+      <form method="POST" action={formAction}>
+        <div class="contact-box">
+          <div class="row">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+              <input type="text" name="name" placeholder={namePlaceholder} />
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+              <input type="tel" name="phone" placeholder={phonePlaceholder} />
+            </div>
+            <div class="col-12 wow fadeInUp" data-wow-delay=".8s">
+              <input type="email" name="email" placeholder={emailPlaceholder} />
+            </div>
+            <div class="col-12 wow fadeInUp" data-wow-delay="1.1s">
+              <textarea name="message" placeholder={messagePlaceholder}></textarea>
+            </div>
+            <div class="col-12 wow fadeInUp" data-wow-delay="1.4s">
+              <button type="submit" class="theme-btn">
+                {submitText}
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  lang: string;
+  dir?: 'ltr' | 'rtl';
+  title: string;
+  description?: string;
+  breadcrumb?: Array<{ label: string; href?: string }>;
+}
+
+const { lang, dir = 'rtl', title, description, breadcrumb } = Astro.props;
+---
+
+<BaseLayout lang={lang} dir={dir} title={title} description={description}>
+  <slot name="header" />
+  
+  <main>
+    <slot />
+  </main>
+
+  <slot name="footer" />
+</BaseLayout>

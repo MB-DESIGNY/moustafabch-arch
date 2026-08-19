@@ -1,0 +1,17 @@
+---
+// MouseCursor Component
+// Custom mouse cursor animation
+
+export interface Props {
+  enabled?: boolean;
+}
+
+const { enabled = true } = Astro.props;
+---
+
+{enabled && (
+  <>
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+  </>
+)}

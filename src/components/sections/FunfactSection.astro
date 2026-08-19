@@ -1,0 +1,40 @@
+---
+// FunfactSection Component
+// Funfact/Counter section with statistics
+
+import FunfactItem from '../ui/FunfactItem.astro';
+
+export interface Props {
+  funfacts?: Array<{
+    count: number;
+    suffix?: string;
+    label: string;
+  }>;
+}
+
+const {
+  funfacts = [
+    { count: 7, suffix: '+', label: 'Years Experience' },
+    { count: 297, suffix: '+', label: 'Completed Projects' },
+    { count: 138, suffix: '', label: 'Happy Clients' },
+    { count: 97, suffix: '%', label: 'Satisfaction Rate' }
+  ]
+} = Astro.props;
+---
+
+<section class="funfact-section">
+  <div class="container">
+    <div class="funfact-wrapper">
+      <div class="row g-3">
+        {funfacts.map((item, index) => (
+          <FunfactItem 
+            count={item.count}
+            suffix={item.suffix}
+            label={item.label}
+            wowDelay={`${0.2 + (index * 0.2)}s`}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

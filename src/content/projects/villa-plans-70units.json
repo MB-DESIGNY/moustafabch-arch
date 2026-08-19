@@ -1,0 +1,39 @@
+---
+title:
+  ar: "مخططات فيلات - 70 وحدة سكنية"
+  en: "Villa Plans - 70 Residential Units"
+  fr: "Plans de Villas - 70 Unités Résidentielles"
+slug: "villa-plans-70units"
+category: "residential"
+coverImage: "/assets/img/projects/villa-cover.jpg"
+gallery:
+  - "/assets/img/projects/villa-1.jpg"
+  - "/assets/img/projects/villa-2.jpg"
+  - "/assets/img/projects/villa-3.jpg"
+client:
+  ar: "عميل خاص"
+  en: "Private Client"
+  fr: "Client Privé"
+location:
+  ar: "المملكة العربية السعودية"
+  en: "Saudi Arabia"
+  fr: "Arabie Saoudite"
+year: "2023"
+tools:
+  - "AutoCAD"
+  - "Photoshop"
+  - "SketchUp"
+summary:
+  ar: "تصميم كامل لـ 70 فيلا سكنية متنوعة المساحات، تتراوح بين 200-400 متر مربع، مع مراعاة الخصوصية والكفاءة الوظيفية."
+  en: "Complete design for 70 residential villas with varying areas, ranging from 200-400 sqm, with consideration for privacy and functional efficiency."
+  fr: "Conception complète de 70 villas résidentielles avec des superficies variables, allant de 200 à 400 m², en tenant compte de la confidentialité et de l'efficacité fonctionnelle."
+challenge:
+  ar: "تحقيق التوازن بين الكثافة السكنية والراحة المعيشية مع الالتزام باللوائح البلدية."
+  en: "Achieving balance between residential density and living comfort while complying with municipal regulations."
+  fr: "Réaliser un équilibre entre densité résidentielle et confort de vie tout en respectant les réglementations municipales."
+outcome:
+  ar: "مشروع متكامل يلبي احتياجات الأسر العصرية مع الحفاظ على الهوية المعمارية المحلية."
+  en: "An integrated project meeting modern family needs while maintaining local architectural identity."
+  fr: "Un projet intégré répondant aux besoins des familles modernes tout en maintenant l'identité architecturale locale."
+featured: true
+---

@@ -1,0 +1,59 @@
+{
+  "title": {
+    "ar": "تصميم كتالوجات للمشاريع الهندسية",
+    "en": "Catalog Design for Engineering Projects",
+    "fr": "Conception de Catalogues pour Projets d'Ingénierie"
+  },
+  "slug": "catalog-design",
+  "icon": "/assets/img/icons/service-5.svg",
+  "shortDescription": {
+    "ar": "كتالوجات احترافية لعرض مشاريعك",
+    "en": "Professional catalogs to showcase your projects",
+    "fr": "Catalogues professionnels pour présenter vos projets"
+  },
+  "fullDescription": {
+    "ar": "نصمم كتالوجات احترافية تعرض مشاريعك الهندسية بطريقة منظمة وجذابة، مثالية للتسويق والعروض التجارية.",
+    "en": "We design professional catalogs that showcase your engineering projects in an organized and attractive way, ideal for marketing and business presentations.",
+    "fr": "Nous concevons des catalogues professionnels qui présentent vos projets d'ingénierie de manière organisée et attrayante, idéaux pour le marketing et les présentations commerciales."
+  },
+  "processSteps": [
+    {
+      "title": {
+        "ar": "تنظيم المحتوى",
+        "en": "Content Organization",
+        "fr": "Organisation du Contenu"
+      },
+      "description": {
+        "ar": "نصنف ونرتب المشاريع",
+        "en": "We classify and organize projects",
+        "fr": "Nous classifions et organisons les projets"
+      }
+    },
+    {
+      "title": {
+        "ar": "التصميم والإخراج",
+        "en": "Design and Layout",
+        "fr": "Conception et Mise en Page"
+      },
+      "description": {
+        "ar": "نصمم صفحات الكتالوج",
+        "en": "We design catalog pages",
+        "fr": "Nous concevons les pages du catalogue"
+      }
+    },
+    {
+      "title": {
+        "ar": "الطباعة النهائية",
+        "en": "Final Printing",
+        "fr": "Impression Finale"
+      },
+      "description": {
+        "ar": "نجهز للطباعة عالية الجودة",
+        "en": "We prepare for high-quality printing",
+        "fr": "Nous préparons l'impression haute qualité"
+      }
+    }
+  ],
+  "comingSoon": false,
+  "order": 5
+}
