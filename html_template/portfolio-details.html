@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gramentheme">
+    <meta name="description" content="Minifolio - Portfolio HTML Template">
+    <!-- ======== Page title ============ -->
+    <title>Minifolio - Portfolio HTML Template</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="body-color">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    N
+                </span>
+                 <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                 <span data-text-preloader="F" class="letters-loading">
+                    F
+                </span>
+                <span data-text-preloader="O" class="letters-loading">
+                    O
+                </span>
+                 <span data-text-preloader="L" class="letters-loading">
+                    L
+                </span>
+                <span data-text-preloader="I" class="letters-loading">
+                    I
+                </span>
+                <span data-text-preloader="O" class="letters-loading">
+                    O
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/Logo-black.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:info@example.com"><span
+                                            class="mailto:info@example.com">info@example.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+11002345909">+11002345909</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4 text-center">
+                            <a href="contact.html" class="theme-btn">
+                                Consultation <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/img/logo/Logo-black.svg" alt="logo-img">
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html">
+                                <img src="assets/img/logo/Logo-black.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="has-dropdown active">
+                                        <a href="index.html" class="border-none">
+                                            Home
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Home 01</a></li>
+                                            <li><a href="index-2.html">Home 02</a></li>
+                                            <li><a href="index-3.html">Home 03</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">
+                                            Pages
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="service.html">Our Services</a>
+                                                <ul class="submenu">
+                                                    <li><a href="service.html">Service</a></li>
+                                                    <li><a href="service-details.html">Service Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio.html">Our Portfolio</a>
+                                                <ul class="submenu">
+                                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="faq.html">Faq</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="news-details.html">
+                                            Blog
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="news.html">Blog Grid</a></li>
+                                            <li><a href="news-classic.html">Blog Classic</a></li>
+                                            <li><a href="news-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <a href="contact.html" class="theme-btn"> Hire Me
+                            <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb-Section Start -->
+    <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/breadcrumb/bg.jpg);">
+        <div class="star-shape float-bob-x">
+            <img src="assets/img/shape/star.png" alt="img">
+        </div>
+        <div class="arrow-shape">
+            <img src="assets/img/breadcrumb/arrow.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h2>Protifolio Detailss</h2>
+                    <ul class="breadcrumb-list">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="active">Protifolio Details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section Start -->
+    <section class="project-details-section section-padding fix section-bg">
+        <div class="container">
+            <div class="project-details-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="project-details-images">
+                            <img src="assets/img/project/21.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <div class="project-details-content">
+                            <span>Create a seamless and engaging food ordering experience</span>
+                            <h2>Food Delivery & Restaurant Website</h2>
+                            <p class="mb-3">At [Your Restaurant Name], we believe food is more than just a meal—it’s an
+                                experience.
+                                Whether you’re craving comfort food or gourmet dishes, we serve up quality and flavor.
+                                With a commitment to fresh ingredients and exceptional service, we aim to provide you
+                                with an unforgettable dining experience, both at our restaurant and from the comfort of
+                                your home.</p>
+                            <h3 class="mt-2">Research & User Insights</h3>
+                            <ul class="list-item">
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon">
+                                    <h6>User Research:</h6> Surveys, competitor analysis, and pain points
+                                </li>
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon">
+                                    <h6>Target Audience:</h6> Restaurant owners, foodies, busy professionals
+                                </li>
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon">
+                                    <h6>User Personas:</h6> Example personas with goals & frustrations
+                                </li>
+                            </ul>
+                            <p>
+                                At [Your Restaurant Name], we believe food is more than just a meal—it’s an experience.
+                                Whether you’re craving comfort food or gourmet dishes, we serve up quality and flavor.
+                                With a commitment to fresh ingredients and exceptional service, we aim to provide you
+                                with an unforgettable dining experience, both at our restaurant and from the comfort of
+                                your home.
+                            </p>
+                            <h3 class="mt-4">Problem Statement</h3>
+                            <ul class="list-item">
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon"> Challenges in existing
+                                    food delivery/restaurant websites</li>
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon"> Need for better user
+                                    experience, faster ordering, and modern UI</li>
+                            </ul>
+                            <h3>Final Outcome & Impac:</h3>
+                            <ul class="list-item">
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon">
+                                    <h6>Before vs. After UI Comparison:</h6> Showcasing improvements
+                                </li>
+                                <li><img src="assets/img/icon/arrow-circle-right.svg" alt="icon"> Need for better user
+                                    experience, faster ordering, and modern UI</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="project-thumb">
+                                        <img src="assets/img/project/22.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-thumb">
+                                        <img src="assets/img/project/23.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4">We believe food is more than just a meal—it’s an experience. Whether you’re
+                                craving
+                                comfort food or gourmet dishes, we serve up quality and flavor. With a commitment to
+                                fresh ingredients and exceptional service, we aim to provide </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="main-sidebar">
+                            <div class="single-sidebar-widget">
+                                <div class="wid-title">
+                                    <h3>Project Information</h3>
+                                </div>
+                                <div class="project-info">
+                                    <div class="item">
+                                        <h6>Project Name</h6>
+                                        <span>Foodie Delight</span>
+                                    </div>
+                                    <div class="item">
+                                        <h6>Client</h6>
+                                        <span>Tushar Raja</span>
+                                    </div>
+                                    <div class="item">
+                                        <h6>Technology</h6>
+                                        <span>Figma</span>
+                                    </div>
+                                    <div class="item">
+                                        <h6>Cost</h6>
+                                        <span>USD 1,50,499</span>
+                                    </div>
+                                    <div class="item">
+                                        <h6>Date</h6>
+                                        <span>25 February, 2025</span>
+                                    </div>
+                                </div>
+                                <div class="social">
+                                    <h6>Social: </h6>
+                                    <ul class="social-list">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-sidebar-widget" style="background-image: url(assets/img/shape/bg.png);">
+                                <div class="info-widget">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/img/logo/Logo-black.svg" alt="logo"></a>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Don't Hesitate to Contact Me</h3>
+                                        <h5>+77 022 444 05 05</h5>
+                                    </div>
+                                    <a href="contact.html" class="theme-btn">Get in Touch <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+   <footer class="footer-section fix">
+       <div class="bg-shape">
+        <img src="assets/img/footer/bg-shape.png" alt="img">
+       </div>
+       <div class="mycustom-marque">
+              <div class="scrolling-wrap style-2">
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+               <div class="comm">
+                   <div></div>
+                   <div class="cmn-textslide">Have a In Mind? Lets Work</div>
+                   <div class="cmn-textslide">TOGETHER</div>
+               </div>
+           </div>
+       </div>
+        <div class="container">
+            <div class="footer-widget-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-item">
+                            <a href="index.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+                                <img src="assets/img/logo/Logo-black.svg" alt="img">
+                            </a>
+                            <ul class="footer-list-items wow fadeInUp" data-wow-delay=".5s">
+                                <li>
+                                    <a href="about.html">ABOUT ME</a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">SERVICES</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio-details.html">PORTFOLIO</a>
+                                </li>
+                                <li>
+                                    <a href="news-details.html">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                            <ul class="social-icon wow fadeInUp" data-wow-delay=".3s">
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </li>
+                                <li>
+                                   <i class="fa-brands fa-twitter"></i>
+                                    Twitter
+                                </li>
+                                <li>
+                                   <i class="fa-brands fa-linkedin-in"></i>
+                                    Linkedin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                        Copyright © <span>Grameentheme</span>
+                    </p>
+                    <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="contact.html">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Typed Js >>-->
+    <script src="assets/js/typed.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
