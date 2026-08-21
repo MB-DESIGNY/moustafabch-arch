@@ -1,38 +1,26 @@
----
-title:
-  ar: "السكن الاجتماعي - عين الباي"
-  en: "Social Housing - Ain El Bey"
-  fr: "Logement Social - Ain El Bey"
-slug: "social-housing-ain-el-bey"
-category: "residential"
-coverImage: "/assets/img/projects/housing-cover.jpg"
-gallery:
-  - "/assets/img/projects/housing-1.jpg"
-  - "/assets/img/projects/housing-2.jpg"
-client:
-  ar: "مؤسسة العمومية للسكن"
-  en: "Public Housing Institution"
-  fr: "Institution Publique du Logement"
-location:
-  ar: "عين الباي، الجزائر"
-  en: "Ain El Bey, Algeria"
-  fr: "Ain El Bey, Algérie"
-year: "2022"
-tools:
-  - "AutoCAD"
-  - "Revit"
-  - "Photoshop"
-summary:
-  ar: "مشروع سكن اجتماعي يتضمن 52 وحدة سكنية و17 وحدة إضافية، مصمم لتوفير مساكن ميسورة التكلفة للعائلات الشابة."
-  en: "Social housing project including 52 residential units and 17 additional units, designed to provide affordable housing for young families."
-  fr: "Projet de logement social comprenant 52 unités résidentielles et 17 unités supplémentaires, conçu pour fournir un logement abordable aux jeunes familles."
-challenge:
-  ar: "توفير حلول سكنية اقتصادية مع الحفاظ على جودة الحياة والخصوصية."
-  en: "Providing economical housing solutions while maintaining quality of life and privacy."
-  fr: "Fournir des solutions de logement économiques tout en maintenant la qualité de vie et la confidentialité."
-outcome:
-  ar: "تسليم مشروع متكامل يلبي احتياجات 69 عائلة بجودة عالية وتكلفة معقولة."
-  en: "Delivering an integrated project meeting the needs of 69 families with high quality and affordable cost."
-  fr: "Livraison d'un projet intégré répondant aux besoins de 69 familles avec une qualité élevée et un coût abordable."
-featured: true
----
+{
+  "title": {
+    "ar": "الإسكان الاجتماعي - عين الباي",
+    "en": "Social Housing - Ain El Bey",
+    "fr": "Logement Social - Ain El Bey"
+  },
+  "category": {
+    "ar": "إسكان اجتماعي",
+    "en": "Social Housing",
+    "fr": "Logement Social"
+  },
+  "description": {
+    "ar": "مشروع إسكان اجتماعي يتضمن مئات الوحدات السكنية",
+    "en": "Social housing project including hundreds of residential units",
+    "fr": "Projet de logement social comprenant des centaines d'unités résidentielles"
+  },
+  "coverImage": "/assets/img/project/social-housing.jpg",
+  "featured": true,
+  "client": "Government Agency",
+  "location": {
+    "ar": "قسنطينة، الجزائر",
+    "en": "Constantine, Algeria",
+    "fr": "Constantine, Algérie"
+  },
+  "year": 2022
+}

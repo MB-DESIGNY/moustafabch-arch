@@ -1,0 +1,148 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../../utils/i18n';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  
+  return projects.flatMap((project) => {
+    // Generate a route for each language
+    return ['ar', 'en', 'fr'].map(lang => ({
+      params: { lang, slug: project.slug },
+      props: { project, lang },
+    }));
+  });
+}
+
+const { project, lang } = Astro.props;
+const t = await getTranslations(lang);
+
+// Get localized content
+const title = project.data.title[lang as 'ar'|'en'|'fr'];
+const category = project.data.category[lang as 'ar'|'en'|'fr'];
+const description = project.data.description[lang as 'ar'|'en'|'fr'];
+const fullDescription = project.data.fullDescription?.[lang as 'ar'|'en'|'fr'] || description;
+---
+
+<BaseLayout
+  lang={lang}
+  dir={lang === 'ar' ? 'rtl' : 'ltr'}
+  title={`${title} - Draft Studio`}
+  description={description}
+>
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-area bread-bg bread-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bread-text">
+            <h1 class="title">{title}</h1>
+            <ul class="list">
+              <li><a href={`/${lang}/`}>{t.common.home}</a></li>
+              <li><span>/</span></li>
+              <li><a href={`/${lang}/portfolio/`}>{t.projects.title}</a></li>
+              <li><span>/</span></li>
+              <li class="active">{title}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail -->
+  <section class="project-details pd-top-100 pd-bottom-70">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <img 
+            src={project.data.coverImage} 
+            alt={title} 
+            class="img-fluid rounded mb-4 w-100"
+            style="max-height: 500px; object-fit: cover;"
+          />
+          
+          <div class="project-detail-content">
+            <h2 class="mb-2">{title}</h2>
+            <p class="text-muted mb-4">{category}</p>
+            
+            <p class="lead">{description}</p>
+            <div class="content-body mt-4">
+              {fullDescription.split('\n').map((paragraph) => (
+                <p class="mb-3">{paragraph}</p>
+              ))}
+            </div>
+            
+            {project.data.client && (
+              <div class="mt-4">
+                <strong>{t.projects.client}:</strong> {project.data.client}
+              </div>
+            )}
+            
+            {project.data.location && (
+              <div class="mt-2">
+                <strong>{t.projects.location}:</strong> {project.data.location}
+              </div>
+            )}
+            
+            {project.data.year && (
+              <div class="mt-2">
+                <strong>{t.projects.year}:</strong> {project.data.year}
+              </div>
+            )}
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <aside class="sidebar">
+            <div class="widget">
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <h4 class="h5 mb-3">{t.projects.details}</h4>
+                  <ul class="list-unstyled">
+                    {project.data.client && (
+                      <li class="mb-2">
+                        <strong>{t.projects.client}:</strong><br/>
+                        {project.data.client}
+                      </li>
+                    )}
+                    {project.data.location && (
+                      <li class="mb-2">
+                        <strong>{t.projects.location}:</strong><br/>
+                        {project.data.location}
+                      </li>
+                    )}
+                    {project.data.year && (
+                      <li class="mb-2">
+                        <strong>{t.projects.year}:</strong><br/>
+                        {project.data.year}
+                      </li>
+                    )}
+                    <li class="mb-2">
+                      <strong>{t.projects.category}:</strong><br/>
+                      {category}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="widget mt-4">
+              <h4 class="h5 mb-3">{t.projects.otherProjects}</h4>
+              <ul class="list-group list-group-flush">
+                {(await getCollection('projects')).filter(p => p.slug !== project.slug).slice(0, 5).map((p) => (
+                  <li class="list-group-item">
+                    <a href={`/${lang}/portfolio/${p.slug}`} class="text-decoration-none">
+                      {p.data.title[lang as 'ar'|'en'|'fr']}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

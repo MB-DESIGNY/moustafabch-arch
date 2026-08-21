@@ -4,22 +4,32 @@
 
 import ProjectCard from '../ui/ProjectCard.astro';
 import SectionTitle from '../ui/SectionTitle.astro';
-import type { CollectionEntry } from 'astro:content';
+
+export interface ProjectItem {
+  slug: string;
+  title: string;
+  category: string;
+  coverImage: string;
+  location?: string;
+  year?: string;
+}
 
 export interface Props {
   title?: string;
   subtitle?: string;
-  projects: CollectionEntry<'projects'>[];
-  ctaText?: string;
-  ctaHref?: string;
+  projects: ProjectItem[];
+  viewAllText?: string;
+  viewAllHref?: string;
+  featuredLabel?: string;
 }
 
 const {
   title = 'My Recent Working Project',
   subtitle = 'CASE STUDIES',
   projects,
-  ctaText = 'View All Project',
-  ctaHref = '/portfolio'
+  viewAllText = 'View All Project',
+  viewAllHref = '/portfolio',
+  featuredLabel = 'Featured'
 } = Astro.props;
 ---
 
@@ -40,34 +50,38 @@ const {
         iconSrc="/assets/img/icon/32.svg"
         style="style-3"
       />
-      <a href={ctaHref} class="theme-btn">
-        {ctaText}
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
+      {viewAllHref && (
+        <a href={viewAllHref} class="theme-btn">
+          {viewAllText}
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      )}
     </div>
     
     <div class="project-wrapper-3">
       <div class="main-box">
         {/* Active/Featured Project */}
-        <div class="box-2 active wow fadeInUp">
-          <div class="project-content">
-            <div class="text">
-              <span>{projects[0]?.data.category || 'Architecture'}</span>
-              <h4><a href={`/portfolio/${projects[0]?.slug}`}>{projects[0]?.data.title}</a></h4>
+        {projects.length > 0 && (
+          <div class="box-2 active wow fadeInUp">
+            <div class="project-content">
+              <div class="text">
+                <span>{projects[0].category || 'Architecture'}</span>
+                <h4><a href={`/portfolio/${projects[0].slug}`}>{projects[0].title}</a></h4>
+              </div>
+              <a href={`/portfolio/${projects[0].slug}`} class="icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
-            <a href={`/portfolio/${projects[0]?.slug}`} class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
           </div>
-        </div>
+        )}
         
         {/* Additional Projects */}
         {projects.slice(1, 4).map((project, index) => (
           <ProjectCard 
-            imageSrc={project.data.imageSrc || '/assets/img/project/default.jpg'}
-            category={project.data.category}
-            title={project.data.title}
-            href={`/portfolio/${project.slug}`}
+            coverImage={project.coverImage || '/assets/img/project/default.jpg'}
+            category={project.category}
+            title={project.title}
+            slug={`/portfolio/${project.slug}`}
             bgClass={`bg-${index + 1}`}
             wowDelay={`${0.2 + (index * 0.2)}s`}
           />

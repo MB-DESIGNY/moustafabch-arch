@@ -1,46 +1,15 @@
----
-title:
-  ar: "التصميم المعماري للبنايات السكنية"
-  en: "Architectural Design for Residential Buildings"
-  fr: "Design Architectural pour Bâtiments Résidentiels"
-slug: "architectural-design-residential"
-icon: "/assets/img/icons/service-1.svg"
-shortDescription:
-  ar: "تصميم فيلات ومنازل سكنية تجمع بين الجمال والوظيفة"
-  en: "Designing villas and residential homes that blend beauty and functionality"
-  fr: "Conception de villas et maisons résidentielles alliant beauté et fonctionnalité"
-fullDescription:
-  ar: "نقدم خدمات تصميم معماري متكاملة للبنايات السكنية، من الفيلات الفاخرة إلى المجمعات السكنية. نركز على خلق مساحات معيشية مريحة وعملية تعكس ذوق العميل وتلبي احتياجاته اليومية."
-  en: "We provide comprehensive architectural design services for residential buildings, from luxury villas to housing complexes. We focus on creating comfortable and functional living spaces that reflect the client's taste and meet their daily needs."
-  fr: "Nous fournissons des services de conception architecturale complets pour les bâtiments résidentiels, des villas de luxe aux complexes d'habitation. Nous nous concentrons sur la création d'espaces de vie confortables et fonctionnels qui reflètent le goût du client et répondent à ses besoins quotidiens."
-processSteps:
-  - title:
-      ar: "تحليل الموقع والمتطلبات"
-      en: "Site Analysis and Requirements"
-      fr: "Analyse du Site et Exigences"
-    description:
-      ar: "دراسة دقيقة للموقع وفهم احتياجات العميل"
-      en: "Thorough site study and understanding client needs"
-      fr: "Étude approfondie du site et compréhension des besoins du client"
-  - title:
-      ar: "التصميم الأولي"
-      en: "Preliminary Design"
-      fr: "Conception Préliminaire"
-    description:
-      ar: "إعداد مخططات أولية وتصورات تصميمية"
-      en: "Preparing preliminary plans and design concepts"
-      fr: "Préparation de plans préliminaires et de concepts de design"
-  - title:
-      ar: "التصميم التفصيلي"
-      en: "Detailed Design"
-      fr: "Conception Détaillée"
-    description:
-      ar: "تطوير المخططات التنفيذية والتفاصيل الإنشائية"
-      en: "Developing execution plans and structural details"
-      fr: "Développement des plans d'exécution et des détails structurels"
-gallery:
-  - "/assets/img/projects/villa-1.jpg"
-  - "/assets/img/projects/villa-2.jpg"
-comingSoon: false
-order: 1
----
+{
+  "title": {
+    "ar": "التصميم المعماري للبنايات السكنية",
+    "en": "Architectural Design for Residential Buildings",
+    "fr": "Design Architectural pour Bâtiments Résidentiels"
+  },
+  "description": {
+    "ar": "تصميم فيلات ومنازل سكنية تجمع بين الجمال والوظيفة",
+    "en": "Designing villas and residential homes that blend beauty and functionality",
+    "fr": "Conception de villas et maisons résidentielles alliant beauté et fonctionnalité"
+  },
+  "icon": "/assets/img/icons/service-1.svg",
+  "order": 1,
+  "comingSoon": false
+}

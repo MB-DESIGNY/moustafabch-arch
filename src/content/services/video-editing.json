@@ -1,46 +1,44 @@
----
-title:
-  ar: "المونتاج العقاري"
-  en: "Real Estate Video Editing"
-  fr: "Montage Vidéo Immobilier"
-slug: "real-estate-video-editing"
-icon: "/assets/img/icons/service-8.svg"
-shortDescription:
-  ar: "فيديوهات احترافية لتسويق مشاريعك العقارية"
-  en: "Professional videos for marketing your real estate projects"
-  fr: "Vidéos professionnelles pour commercialiser vos projets immobiliers"
-fullDescription:
-  ar: "نقدم خدمات مونتاج وتصوير فيديوهات احترافية للمشاريع العقارية، تشمل فيديوهات الجولات الافتراضية، فيديوهات العرض التسويقي، ومقاطع السوشيال ميديا الجذابة."
-  en: "We provide professional video editing and filming services for real estate projects, including virtual tour videos, marketing presentation videos, and attractive social media clips."
-  fr: "Nous fournissons des services de montage vidéo et de tournage professionnels pour les projets immobiliers, y compris des vidéos de visite virtuelle, des vidéos de présentation marketing et des clips attractifs pour les réseaux sociaux."
-processSteps:
-  - title:
-      ar: "التصوير الميداني"
-      en: "Field Shooting"
-      fr: "Tournage sur Site"
-    description:
-      ar: "تصوير المشروع بأعلى جودة باستخدام معدات احترائية"
-      en: "Filming the project with highest quality using professional equipment"
-      fr: "Tournage du projet avec la plus haute qualité utilisant un équipement professionnel"
-  - title:
-      ar: "المونتاج والمؤثرات"
-      en: "Editing and Effects"
-      fr: "Montage et Effets"
-    description:
-      ar: "مонтаجة الفيديو وإضافة المؤثرات البصرية والصوتية"
-      en: "Video editing and adding visual and sound effects"
-      fr: "Montage vidéo et ajout d'effets visuels et sonores"
-  - title:
-      ar: "الإخراج النهائي"
-      en: "Final Output"
-      fr: "Sortie Finale"
-    description:
-      ar: "تصدير الفيديو بصيغ مختلفة تناسب جميع المنصات"
-      en: "Exporting video in different formats suitable for all platforms"
-      fr: "Exportation de la vidéo dans différents formats adaptés à toutes les plateformes"
-gallery:
-  - "/assets/img/projects/video-1.jpg"
-  - "/assets/img/projects/video-2.jpg"
-comingSoon: true
-order: 8
----
+{
+  "title": {
+    "ar": "مونتاج فيديوهات العقارات",
+    "en": "Real Estate Video Editing",
+    "fr": "Montage Vidéo Immobilière"
+  },
+  "description": {
+    "ar": "إنتاج فيديوهات تسويقية للعقارات والمشاريع (قريباً)",
+    "en": "Marketing video production for real estate and projects (Coming Soon)",
+    "fr": "Production de vidéos marketing pour immobilier et projets (Bientôt)"
+  },
+  "icon": "/assets/img/icons/service-8.svg",
+  "order": 8,
+  "comingSoon": true
+}
+
+echo "Created all 8 service JSON files"
+cat > /workspace/src/content/projects/villa-plans-70units.json << 'EOF'
+{
+  "title": {
+    "ar": "مخططات فيلات - 70 وحدة",
+    "en": "Villa Plans - 70 Units",
+    "fr": "Plans de Villas - 70 Unités"
+  },
+  "category": {
+    "ar": "تصميم سكني",
+    "en": "Residential Design",
+    "fr": "Design Résidentiel"
+  },
+  "description": {
+    "ar": "تصميم وتخطيط 70 فيلا سكنية بمواصفات عصرية",
+    "en": "Design and planning of 70 residential villas with modern specifications",
+    "fr": "Conception et planification de 70 villas résidentielles avec spécifications modernes"
+  },
+  "coverImage": "/assets/img/project/villa-plans.jpg",
+  "featured": true,
+  "client": "Private Client",
+  "location": {
+    "ar": "الجزائر",
+    "en": "Algeria",
+    "fr": "Algérie"
+  },
+  "year": 2023
+}

@@ -1,38 +1,26 @@
----
-title:
-  ar: "المحطة البحرية - بجاية"
-  en: "Maritime Station - Bejaia"
-  fr: "Station Maritime - Bejaia"
-slug: "maritime-station-bejaia"
-category: "commercial"
-coverImage: "/assets/img/projects/maritime-cover.jpg"
-gallery:
-  - "/assets/img/projects/maritime-1.jpg"
-  - "/assets/img/projects/maritime-2.jpg"
-client:
-  ar: "مؤسسة ميناء بجاية"
-  en: "Bejaia Port Authority"
-  fr: "Autorité Portuaire de Bejaia"
-location:
-  ar: "بجاية، الجزائر"
-  en: "Bejaia, Algeria"
-  fr: "Bejaia, Algérie"
-year: "2020"
-tools:
-  - "AutoCAD"
-  - "Revit"
-  - "Photoshop"
-summary:
-  ar: "تصميم محطة بحرية متكاملة لخدمة المسافرين والبضائع، تتضمن صالات انتظار، مكاتب إدارية، ومرافق تجارية."
-  en: "Design of an integrated maritime station for passenger and cargo services, including waiting halls, administrative offices, and commercial facilities."
-  fr: "Conception d'une station maritime intégrée pour les services aux passagers et au fret, comprenant des halls d'attente, des bureaux administratifs et des installations commerciales."
-challenge:
-  ar: "دمج الوظيفة العملية مع الجمالية المعمارية في بيئة بحرية صعبة."
-  en: "Integrating practical functionality with architectural aesthetics in a challenging marine environment."
-  fr: "Intégrer la fonctionnalité pratique avec l'esthétique architecturale dans un environnement marin difficile."
-outcome:
-  ar: "منشأة بحرية حديثة أصبحت معلمًا مميزًا في مدينة بجاية."
-  en: "A modern maritime facility that became a distinctive landmark in Bejaia city."
-  fr: "Une installation maritime moderne devenue un point de repère distinctif dans la ville de Bejaia."
-featured: true
----
+{
+  "title": {
+    "ar": "محطة بحرية - بجاية",
+    "en": "Maritime Station - Bejaia",
+    "fr": "Station Maritime - Bejaia"
+  },
+  "category": {
+    "ar": "مرافق بحرية",
+    "en": "Maritime Facilities",
+    "fr": "Installations Maritimes"
+  },
+  "description": {
+    "ar": "تصميم محطة بحرية تجارية",
+    "en": "Design of a commercial maritime station",
+    "fr": "Conception d'une station maritime commerciale"
+  },
+  "coverImage": "/assets/img/project/maritime-station.jpg",
+  "featured": true,
+  "client": "Port Authority",
+  "location": {
+    "ar": "بجاية، الجزائر",
+    "en": "Bejaia, Algeria",
+    "fr": "Bejaia, Algérie"
+  },
+  "year": 2020
+}
