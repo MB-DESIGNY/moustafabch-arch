@@ -5,24 +5,20 @@ import ProjectCard from '../../../components/ui/ProjectCard.astro';
 import SectionTitle from '../../../components/ui/SectionTitle.astro';
 import { getTranslations } from '../../../utils/i18n';
 
-export async function getStaticPaths({ lang }: { lang: string }) {
+export async function getStaticPaths() {
   const projects = await getCollection('projects');
-  const t = await getTranslations(lang);
-
+  
   return [
-    {
-      params: { lang },
-      props: { 
-        projects, 
-        t,
-        pageTitle: t.projects.pageTitle,
-        pageDescription: t.projects.pageDescription
-      },
-    },
+    { params: { lang: 'ar' }, props: { projects, lang: 'ar' } },
+    { params: { lang: 'en' }, props: { projects, lang: 'en' } },
+    { params: { lang: 'fr' }, props: { projects, lang: 'fr' } },
   ];
 }
 
-const { projects, t, pageTitle, pageDescription } = Astro.props;
+const { projects, lang } = Astro.props;
+const t = await getTranslations(lang);
+const pageTitle = t.project.pageTitle;
+const pageDescription = t.project.pageDescription;
 ---
 
 <BaseLayout
@@ -53,9 +49,9 @@ const { projects, t, pageTitle, pageDescription } = Astro.props;
   <section class="project-section pd-top-100 pd-bottom-70">
     <div class="container">
       <SectionTitle 
-        subtitle={t.projects.subtitle}
-        title={t.projects.mainTitle}
-        description={t.projects.description}
+        subtitle={t.project.subtitle}
+        title={t.project.title}
+        description={t.project.description}
       />
       
       <div class="row justify-content-center">

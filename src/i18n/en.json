@@ -6,6 +6,15 @@
     "faq": "FAQ",
     "contact": "Contact"
   },
+  "common": {
+    "home": "Home",
+    "back": "Back",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noResults": "No results found"
+  },
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Mustafa Benchabane",
@@ -46,7 +55,9 @@
     "title": "Latest Projects",
     "subtitle": "Explore my latest work in architectural design and real estate marketing",
     "viewAll": "View All Projects",
-    "featured": "Featured"
+    "featured": "Featured",
+    "pageTitle": "Project Portfolio - Draft Studio",
+    "pageDescription": "Explore the Draft Studio project portfolio for architectural design and real estate marketing"
   },
   "experience": {
     "title": "Professional Experience",
@@ -68,20 +79,56 @@
     "developedBy": "Developed by"
   },
   "contact": {
+    "pageTitle": "Contact Me - Draft Studio",
+    "pageDescription": "Contact Mustafa Benchabane for inquiries about architectural design and real estate marketing",
     "title": "Get In Touch",
-    "phone": "Phone",
-    "email": "Email",
-    "website": "Website",
-    "location": "Location",
-    "sendMessage": "Send Message",
-    "yourName": "Your Name",
-    "yourEmail": "Your Email",
-    "yourMessage": "Your Message",
-    "sendNow": "Send Now"
+    "subtitle": "Have a project? Let's talk",
+    "mainTitle": "Let's Start Your Next Project",
+    "description": "Get in touch to discuss your next project. I'm available for freelance work and consultations.",
+    "addressTitle": "Address",
+    "address": "Saudi Arabia",
+    "phoneTitle": "Phone",
+    "phone": "+966 XXX XXX XXXX",
+    "emailTitle": "Email",
+    "email": "contact@draftstudio.com",
+    "hoursTitle": "Working Hours",
+    "hours": "Sunday - Thursday: 9:00 AM - 5:00 PM",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formSubmit": "Send Message",
+    "mapPlaceholder": "Map will be added here"
   },
   "faq": {
+    "pageTitle": "FAQ - Draft Studio",
+    "pageDescription": "Answers to the most frequently asked questions about Draft Studio services",
     "title": "Frequently Asked Questions",
-    "subtitle": "Answers to most common questions"
+    "subtitle": "Answers to most common questions",
+    "mainTitle": "Ask Us Your Questions",
+    "description": "Find answers to the most common questions about our services and processes.",
+    "questions": [
+      {
+        "q": "What services do you offer?",
+        "a": "I offer residential and commercial architectural design, visual identity, company profiles, catalog design, Photoshop rendering, as well as 3D rendering and real estate video editing (coming soon)."
+      },
+      {
+        "q": "Which countries do you work in?",
+        "a": "I primarily work in Saudi Arabia, Algeria, and Russia, with 7 years of experience in these markets."
+      },
+      {
+        "q": "How do I get a quote?",
+        "a": "You can contact me through the Contact page or by email at contact@draftstudio.com to discuss your project and receive a customized quote."
+      },
+      {
+        "q": "What are your delivery times?",
+        "a": "Delivery times vary depending on project complexity. A detailed timeline will be provided during the project planning phase."
+      },
+      {
+        "q": "Do you accept international projects?",
+        "a": "Yes, I am open to international projects. Feel free to contact me to discuss your needs."
+      }
+    ]
   },
   "breadcrumb": {
     "home": "Home"

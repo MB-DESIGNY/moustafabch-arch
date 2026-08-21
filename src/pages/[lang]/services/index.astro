@@ -5,24 +5,20 @@ import ServiceCard from '../../../components/ui/ServiceCard.astro';
 import SectionTitle from '../../../components/ui/SectionTitle.astro';
 import { getTranslations } from '../../../utils/i18n';
 
-export async function getStaticPaths({ lang }: { lang: string }) {
+export async function getStaticPaths() {
   const services = await getCollection('services');
-  const t = await getTranslations(lang);
-
+  
   return [
-    {
-      params: { lang },
-      props: { 
-        services, 
-        t,
-        pageTitle: t.services.pageTitle,
-        pageDescription: t.services.pageDescription
-      },
-    },
+    { params: { lang: 'ar' }, props: { services, lang: 'ar' } },
+    { params: { lang: 'en' }, props: { services, lang: 'en' } },
+    { params: { lang: 'fr' }, props: { services, lang: 'fr' } },
   ];
 }
 
-const { services, t, pageTitle, pageDescription } = Astro.props;
+const { services, lang } = Astro.props;
+const t = await getTranslations(lang);
+const pageTitle = t.services.pageTitle;
+const pageDescription = t.services.pageDescription;
 
 // Filter out "coming soon" services for the main grid if desired, or show all with badges
 const activeServices = services.filter(s => !s.data.comingSoon);

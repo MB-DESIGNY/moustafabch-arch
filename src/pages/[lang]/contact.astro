@@ -3,22 +3,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionTitle from '../../components/ui/SectionTitle.astro';
 import { getTranslations } from '../../utils/i18n';
 
-export async function getStaticPaths({ lang }: { lang: string }) {
-  const t = await getTranslations(lang);
-
+export async function getStaticPaths() {
   return [
-    {
-      params: { lang },
-      props: { 
-        t,
-        pageTitle: t.contact.pageTitle,
-        pageDescription: t.contact.pageDescription
-      },
-    },
+    { params: { lang: 'ar' }, props: { lang: 'ar' } },
+    { params: { lang: 'en' }, props: { lang: 'en' } },
+    { params: { lang: 'fr' }, props: { lang: 'fr' } },
   ];
 }
 
-const { t, pageTitle, pageDescription } = Astro.props;
+const { lang } = Astro.props;
+const t = await getTranslations(lang);
+const pageTitle = t.contact.pageTitle;
+const pageDescription = t.contact.pageDescription;
 ---
 
 <BaseLayout
