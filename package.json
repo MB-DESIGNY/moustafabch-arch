@@ -1,6 +1,19 @@
 {
+  "name": "draft-studio-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
+  },
   "dependencies": {
+    "@astrojs/cloudflare": "^14.2.3",
+    "@astrojs/sitemap": "^3.7.3",
     "animate.css": "^4.1.1",
+    "astro": "^7.2.4",
     "bootstrap": "^5.3.8",
     "jquery": "^4.0.0",
     "swiper": "^14.1.0",

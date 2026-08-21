@@ -1,36 +1,27 @@
 ```
-# Build outputs
-dist/
-build/
-public/
-
 # Dependencies
 node_modules/
 
-# Environment variables
+# Build artifacts
+dist/
+build/
+public/assets/
+public/css/
+public/js/
+public/webfonts/
+
+# Environment
 .env
 .env.local
 .env.*
 
-# Editor/IDE files
+# Editors
 .vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
 
 # Logs
 *.log
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
 # OS generated files
 .DS_Store
 Thumbs.db
-
-# Astro-specific
-.output/
 ```
