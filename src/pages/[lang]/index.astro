@@ -1,4 +1,37 @@
 ---
+// Static paths for language routes
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'ar' } }, // Arabic (default, RTL)
+    { params: { lang: 'en' } }, // English
+    { params: { lang: 'fr' } }, // French
+  ];
+}
+
+// Get current language from params
+const { lang } = Astro.params;
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+// Load translations
+import { getTranslations } from '../../utils/i18n';
+const t = await getTranslations(lang);
+
+// Load content collections
+import { getCollection } from 'astro:content';
+const allServices = await getCollection('services');
+const allProjects = await getCollection('projects');
+
+// Filter active services and featured projects
+const activeServices = allServices
+  .filter((s) => !s.data.comingSoon)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+
+const displayProjects = allProjects
+  .filter((p) => p.data.featured)
+  .slice(0, 4);
+
+// Import layouts and components
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/layout/Header.astro';
 import Footer from '../../components/layout/Footer.astro';
@@ -10,171 +43,112 @@ import ProjectsSection from '../../components/sections/ProjectsSection.astro';
 import FunfactSection from '../../components/sections/FunfactSection.astro';
 import ClientSection from '../../components/sections/ClientSection.astro';
 import TestimonialsSection from '../../components/sections/TestimonialsSection.astro';
-import { getCollection } from 'astro:content';
-import { getTranslations } from '../../utils/i18n';
-
-interface Props {
-  params: { lang: string };
-}
-
-const { lang } = Astro.props.params;
-const t = await getTranslations(lang as 'ar' | 'en' | 'fr');
-const dir = lang === 'ar' ? 'rtl' : 'ltr';
-
-// Get services and projects
-const allServices = await getCollection('services');
-const allProjects = await getCollection('projects');
-
-// Filter active services (not coming soon) for homepage
-const activeServices = allServices
-  .filter((s) => !s.data.comingSoon)
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 3);
-
-// Get featured projects
-const featuredProjects = allProjects
-  .filter((p) => p.data.featured)
-  .slice(0, 3);
-
-// If no featured projects, get first 3
-const displayProjects = featuredProjects.length > 0 
-  ? featuredProjects 
-  : allProjects.slice(0, 3);
-
-const pageTitle = lang === 'ar' 
-  ? t.meta.defaultTitle 
-  : lang === 'en' 
-    ? t.meta.defaultTitle 
-    : t.meta.defaultTitle;
-
-const pageDescription = lang === 'ar'
-  ? t.meta.defaultDescription
-  : lang === 'en'
-    ? t.meta.defaultDescription
-    : t.meta.defaultDescription;
 ---
 
-<BaseLayout
-  lang={lang}
-  dir={dir}
-  title={pageTitle}
-  description={pageDescription}
->
+<BaseLayout lang={lang} dir={dir} title={t.home.title} description={t.home.description}>
   <Header lang={lang} dir={dir} translations={t} />
   
-  {/* Hero Section */}
+  <!-- Hero Section -->
   <HeroSection
-    backgroundImageSrc="/assets/img/hero/bg-3.jpg"
-    badgeIconSrc="/assets/img/icon/32.svg"
-    badgeText={lang === 'ar' ? 'مهندس معماري' : lang === 'fr' ? 'Architecte' : 'Architect'}
-    title={lang === 'ar' ? 'نصمم مساحات تلهم وتبني مستقبلًا أفضل' : lang === 'fr' ? 'Nous concevons des espaces qui inspirent et construisent un avenir meilleur' : 'We Design Spaces That Inspire'}
-    description={t.hero.subtitle}
-    ctaHref={`/${lang}/portfolio/`}
-    ctaText={t.hero.ctaPrimary}
-    heroImageSrc="/assets/img/hero/hero-3.png"
-    bgShapeSrc="/assets/img/hero/blur.png"
+    subtitle={t.hero.subtitle}
+    title={t.hero.title}
+    description={t.hero.description}
+    cvDownloadHref="/assets/pdf/CV_Mustapha_Benchabane.pdf"
+    downloadText={t.hero.downloadCV}
+    contactHref={`/${lang}/contact/`}
+    contactText={t.hero.contactMe}
     socialLinks={[
-      { label: 'Facebook', href: 'https://facebook.com/mbdesigny' },
-      { label: 'Instagram', href: 'https://instagram.com/mbdesigny' },
-      { label: 'LinkedIn', href: 'https://linkedin.com/in/mustafabenchabane' },
-      { label: 'Behance', href: 'https://behance.net/mbdesigny' }
+      { href: 'https://behance.net/mustaphabenchabane', iconClass: 'fab fa-behance' },
+      { href: 'https://dribbble.com/mustaphabenchabane', iconClass: 'fab fa-dribbble' },
+      { href: 'https://instagram.com/draft.studio', iconClass: 'fab fa-instagram' },
+      { href: 'https://linkedin.com/in/mustaphabenchabane', iconClass: 'fab fa-linkedin-in' },
+      { href: 'https://github.com/mustaphabenchabane', iconClass: 'fab fa-github' },
     ]}
   />
-
-  {/* Feature Section */}
+  
+  <!-- Feature Section -->
   <FeatureSection
     title={t.feature.title}
     cards={[
-      {
-        iconSrc: '/assets/img/icon/33.svg',
-        title: t.feature.card1Title,
-        description: t.feature.card1Desc
-      },
-      {
-        iconSrc: '/assets/img/icon/34.svg',
-        title: t.feature.card2Title,
-        description: t.feature.card2Desc
-      },
-      {
-        iconSrc: '/assets/img/icon/35.svg',
-        title: t.feature.card3Title,
-        description: t.feature.card3Desc
-      }
+      { iconSrc: '/assets/img/icon/feature-icon-1.svg', title: t.feature.cards[0].title, description: t.feature.cards[0].description },
+      { iconSrc: '/assets/img/icon/feature-icon-2.svg', title: t.feature.cards[1].title, description: t.feature.cards[1].description },
+      { iconSrc: '/assets/img/icon/feature-icon-3.svg', title: t.feature.cards[2].title, description: t.feature.cards[2].description },
     ]}
   />
-
-  {/* About Section */}
+  
+  <!-- About Section -->
   <AboutSection
+    subtitle={t.about.subtitle}
     title={t.about.title}
     description={t.about.description}
-    imageSrc="/assets/img/about/about-3.jpg"
     experienceYears="7"
-    projectsCompleted="297"
+    projectsCompleted="297+"
     clientsCount="138"
-    satisfactionRate="97"
+    satisfactionRate="97%"
     statsLabels={{
-      experience: t.about.experience,
-      projects: t.about.projectsCompleted,
-      clients: t.about.clientsCount,
-      satisfaction: t.about.satisfactionRate
+      experience: t.about.stats.experience,
+      projects: t.about.stats.projects,
+      clients: t.about.stats.clients,
+      satisfaction: t.about.stats.satisfaction,
     }}
   />
-
-  {/* Services Section */}
+  
+  <!-- Services Section -->
   <ServicesSection
-    title={t.services.title}
     subtitle={t.services.subtitle}
+    title={t.services.title}
     viewAllHref={`/${lang}/services/`}
     viewAllText={t.services.viewAll}
     comingSoonLabel={t.services.comingSoon}
     services={activeServices.map((s) => ({
-      slug: s.data.slug,
+      slug: s.slug,
+      title: s.data.title[lang],
       icon: s.data.icon,
-      title: s.data.title[lang as 'ar' | 'en' | 'fr'],
-      shortDescription: s.data.shortDescription[lang as 'ar' | 'en' | 'fr'],
-      comingSoon: s.data.comingSoon
+      shortDescription: s.data.shortDescription[lang],
+      comingSoon: s.data.comingSoon,
     }))}
   />
-
-  {/* Projects Section */}
+  
+  <!-- Projects Section -->
   <ProjectsSection
-    title={t.project.title}
-    subtitle={t.project.subtitle}
+    subtitle={t.projects.subtitle}
+    title={t.projects.title}
     viewAllHref={`/${lang}/portfolio/`}
-    viewAllText={t.project.viewAll}
-    featuredLabel={t.project.featured}
+    viewAllText={t.projects.viewAll}
+    featuredLabel={t.projects.featured}
     projects={displayProjects.map((p) => ({
-      slug: p.data.slug,
-      title: p.data.title[lang as 'ar' | 'en' | 'fr'],
-      coverImage: p.data.coverImage,
+      slug: p.slug,
+      title: p.data.title[lang],
       category: p.data.category,
-      featured: p.data.featured
+      coverImage: p.data.coverImage,
+      location: p.data.location?.[lang] || '',
+      year: p.data.year || '',
     }))}
   />
-
-  {/* Funfact Section */}
+  
+  <!-- Funfact Section -->
   <FunfactSection
     funfacts={[
-      { number: "7", suffix: "+", label: t.funfact.yearsExperience, iconSrc: '/assets/img/icon/counter-icon-1.svg' },
-      { number: "297", suffix: "+", label: t.funfact.projectsCompleted, iconSrc: '/assets/img/icon/counter-icon-2.svg' },
-      { number: "138", suffix: "", label: t.funfact.happyClients, iconSrc: '/assets/img/icon/counter-icon-3.svg' },
-      { number: "97", suffix: "%", label: t.funfact.satisfactionRate, iconSrc: '/assets/img/icon/counter-icon-4.svg' }
+      { count: 7, suffix: '+', label: t.funfact.yearsExperience, iconSrc: '/assets/img/icon/counter-icon-1.svg' },
+      { count: 297, suffix: '+', label: t.funfact.projectsCompleted, iconSrc: '/assets/img/icon/counter-icon-2.svg' },
+      { count: 138, suffix: '', label: t.funfact.happyClients, iconSrc: '/assets/img/icon/counter-icon-3.svg' },
+      { count: 97, suffix: '%', label: t.funfact.satisfactionRate, iconSrc: '/assets/img/icon/counter-icon-4.svg' },
     ]}
   />
-
-  {/* Client Section */}
+  
+  <!-- Client Section -->
   <ClientSection
     title={t.client.title}
     activeClientsCount="138"
     activeClientsLabel={t.client.activeClients}
   />
-
-  {/* Testimonials Section */}
+  
+  <!-- Testimonials Section -->
   <TestimonialsSection
     title={t.testimonial.title}
     ratingLabel={t.testimonial.rating}
     testimonials={[]}
   />
-
+  
   <Footer lang={lang} dir={dir} translations={t} />
 </BaseLayout>

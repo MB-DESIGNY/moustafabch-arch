@@ -1,46 +1,15 @@
----
-title:
-  ar: "التصميم المعماري للبنايات التجارية"
-  en: "Architectural Design for Commercial Buildings"
-  fr: "Design Architectural pour Bâtiments Commerciaux"
-slug: "architectural-design-commercial"
-icon: "/assets/img/icons/service-2.svg"
-shortDescription:
-  ar: "تصميم مباني تجارية ومكاتب بأسلوب عصري وجذاب"
-  en: "Designing commercial buildings and offices in a modern and attractive style"
-  fr: "Conception de bâtiments commerciaux et bureaux dans un style moderne et attrayant"
-fullDescription:
-  ar: "نختص بتصميم المباني التجارية والمكاتب الإدارية، مع التركيز على تحقيق أقصى استفادة من المساحة وتوفير بيئة عمل منتجة وجذابة للعملاء والموظفين."
-  en: "We specialize in designing commercial buildings and administrative offices, focusing on maximizing space utilization and providing a productive and attractive work environment for clients and employees."
-  fr: "Nous nous spécialisons dans la conception de bâtiments commerciaux et de bureaux administratifs, en nous concentrant sur la maximisation de l'utilisation de l'espace et la fourniture d'un environnement de travail productif et attrayant pour les clients et les employés."
-processSteps:
-  - title:
-      ar: "دراسة الجدوى"
-      en: "Feasibility Study"
-      fr: "Étude de Faisabilité"
-    description:
-      ar: "تحليل متطلبات المشروع والقيود المالية"
-      en: "Analyzing project requirements and financial constraints"
-      fr: "Analyse des exigences du projet et des contraintes financières"
-  - title:
-      ar: "التصميم المفاهيمي"
-      en: "Conceptual Design"
-      fr: "Conception Conceptuelle"
-    description:
-      ar: "تطوير فكرة تصميمية مبتكرة تناسب طبيعة النشاط التجاري"
-      en: "Developing an innovative design concept suitable for the commercial activity"
-      fr: "Développement d'un concept de design innovant adapté à l'activité commerciale"
-  - title:
-      ar: "المخططات التنفيذية"
-      en: "Execution Plans"
-      fr: "Plans d'Exécution"
-    description:
-      ar: "إعداد جميع المخططات والتفاصيل الإنشائية"
-      en: "Preparing all plans and structural details"
-      fr: "Préparation de tous les plans et détails structurels"
-gallery:
-  - "/assets/img/projects/commercial-1.jpg"
-  - "/assets/img/projects/commercial-2.jpg"
-comingSoon: false
-order: 2
----
+{
+  "title": {
+    "ar": "التصميم المعماري للبنايات التجارية",
+    "en": "Architectural Design for Commercial Buildings",
+    "fr": "Design Architectural pour Bâtiments Commerciaux"
+  },
+  "description": {
+    "ar": "تصميم مكاتب ومتاجر وفضاءات تجارية عصرية",
+    "en": "Designing modern offices, shops, and commercial spaces",
+    "fr": "Conception de bureaux, boutiques et espaces commerciaux modernes"
+  },
+  "icon": "/assets/img/icons/service-2.svg",
+  "order": 2,
+  "comingSoon": false
+}

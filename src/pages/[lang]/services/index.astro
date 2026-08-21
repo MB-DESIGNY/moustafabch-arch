@@ -1,0 +1,99 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ServiceCard from '../../../components/ui/ServiceCard.astro';
+import SectionTitle from '../../../components/ui/SectionTitle.astro';
+import { getTranslations } from '../../../utils/i18n';
+
+export async function getStaticPaths({ lang }: { lang: string }) {
+  const services = await getCollection('services');
+  const t = await getTranslations(lang);
+
+  return [
+    {
+      params: { lang },
+      props: { 
+        services, 
+        t,
+        pageTitle: t.services.pageTitle,
+        pageDescription: t.services.pageDescription
+      },
+    },
+  ];
+}
+
+const { services, t, pageTitle, pageDescription } = Astro.props;
+
+// Filter out "coming soon" services for the main grid if desired, or show all with badges
+const activeServices = services.filter(s => !s.data.comingSoon);
+const comingSoonServices = services.filter(s => s.data.comingSoon);
+---
+
+<BaseLayout
+  lang={Astro.params.lang!}
+  dir={Astro.params.lang === 'ar' ? 'rtl' : 'ltr'}
+  title={pageTitle}
+  description={pageDescription}
+>
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-area bread-bg bread-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bread-text">
+            <h1 class="title">{t.services.title}</h1>
+            <ul class="list">
+              <li><a href={`/${Astro.params.lang}/`}>{t.common.home}</a></li>
+              <li><span>/</span></li>
+              <li class="active">{t.services.title}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="service-section pd-top-100 pd-bottom-70">
+    <div class="container">
+      <SectionTitle 
+        subtitle={t.services.subtitle}
+        title={t.services.mainTitle}
+        description={t.services.description}
+      />
+      
+      <div class="row justify-content-center">
+        {activeServices.map((service) => (
+          <div class="col-lg-4 col-md-6 mb-4">
+            <ServiceCard 
+              title={service.data.title[Astro.params.lang as 'ar'|'en'|'fr']}
+              description={service.data.description[Astro.params.lang as 'ar'|'en'|'fr']}
+              icon={service.data.icon}
+              slug={`/ ${Astro.params.lang}/services/${service.slug}`}
+              comingSoon={false}
+            />
+          </div>
+        ))}
+      </div>
+
+      {comingSoonServices.length > 0 && (
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 text-center mb-4">
+            <h3 class="h5 text-muted">{t.services.comingSoonTitle}</h3>
+          </div>
+          {comingSoonServices.map((service) => (
+            <div class="col-lg-4 col-md-6 mb-4">
+              <ServiceCard 
+                title={service.data.title[Astro.params.lang as 'ar'|'en'|'fr']}
+                description={service.data.description[Astro.params.lang as 'ar'|'en'|'fr']}
+                icon={service.data.icon}
+                slug="#"
+                comingSoon={true}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

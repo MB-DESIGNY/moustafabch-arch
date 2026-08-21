@@ -4,24 +4,31 @@
 
 import ServiceCard from '../ui/ServiceCard.astro';
 import SectionTitle from '../ui/SectionTitle.astro';
-import type { CollectionEntry } from 'astro:content';
+
+export interface ServiceItem {
+  slug: string;
+  title: string;
+  icon: string;
+  shortDescription: string;
+  comingSoon?: boolean;
+}
 
 export interface Props {
   title?: string;
   subtitle?: string;
-  services: CollectionEntry<'services'>[];
-  ctaText?: string;
-  ctaHref?: string;
-  showCtaLink?: boolean;
+  services: ServiceItem[];
+  viewAllText?: string;
+  viewAllHref?: string;
+  comingSoonLabel?: string;
 }
 
 const {
   title = 'What I Do',
   subtitle = 'SERVICES',
   services,
-  ctaText = 'View All Service',
-  ctaHref = '/services',
-  showCtaLink = true
+  viewAllText = 'View All Service',
+  viewAllHref = '/services',
+  comingSoonLabel = 'Coming Soon'
 } = Astro.props;
 ---
 
@@ -43,19 +50,19 @@ const {
     <div class="row">
       {services.slice(0, 6).map((service, index) => (
         <ServiceCard 
-          iconSrc={`/assets/img/icon/${39 + index}.svg`}
-          title={service.data.title}
-          description={service.data.description}
-          href={`/services/${service.slug}`}
-          comingSoon={service.data.comingSoon}
+          icon={service.icon}
+          title={service.title}
+          description={service.shortDescription}
+          slug={service.comingSoon ? '#' : `/services/${service.slug}`}
+          comingSoon={service.comingSoon}
           wowDelay={`${0.3 + (index * 0.3)}s`}
         />
       ))}
     </div>
     
-    {showCtaLink && (
+    {viewAllHref && (
       <span class="wow fadeInUp mt-5" data-wow-delay=".3s">
-        {ctaText} <a href={ctaHref}>View All Service</a>
+        {viewAllText} <a href={viewAllHref}>View All Service</a>
       </span>
     )}
   </div>

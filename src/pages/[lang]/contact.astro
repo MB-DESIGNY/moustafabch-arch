@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionTitle from '../../components/ui/SectionTitle.astro';
+import { getTranslations } from '../../utils/i18n';
+
+export async function getStaticPaths({ lang }: { lang: string }) {
+  const t = await getTranslations(lang);
+
+  return [
+    {
+      params: { lang },
+      props: { 
+        t,
+        pageTitle: t.contact.pageTitle,
+        pageDescription: t.contact.pageDescription
+      },
+    },
+  ];
+}
+
+const { t, pageTitle, pageDescription } = Astro.props;
+---
+
+<BaseLayout
+  lang={Astro.params.lang!}
+  dir={Astro.params.lang === 'ar' ? 'rtl' : 'ltr'}
+  title={pageTitle}
+  description={pageDescription}
+>
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-area bread-bg bread-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bread-text">
+            <h1 class="title">{t.contact.title}</h1>
+            <ul class="list">
+              <li><a href={`/${Astro.params.lang}/`}>{t.common.home}</a></li>
+              <li><span>/</span></li>
+              <li class="active">{t.contact.title}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section pd-top-100 pd-bottom-70">
+    <div class="container">
+      <SectionTitle 
+        subtitle={t.contact.subtitle}
+        title={t.contact.mainTitle}
+        description={t.contact.description}
+      />
+      
+      <div class="row">
+        <!-- Contact Info -->
+        <div class="col-lg-4 mb-4">
+          <div class="contact-info-box mb-4">
+            <div class="icon-box mb-3">
+              <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
+            </div>
+            <h4 class="h5">{t.contact.addressTitle}</h4>
+            <p>{t.contact.address}</p>
+          </div>
+          
+          <div class="contact-info-box mb-4">
+            <div class="icon-box mb-3">
+              <i class="fa fa-phone fa-2x text-primary"></i>
+            </div>
+            <h4 class="h5">{t.contact.phoneTitle}</h4>
+            <p>{t.contact.phone}</p>
+          </div>
+          
+          <div class="contact-info-box mb-4">
+            <div class="icon-box mb-3">
+              <i class="fa fa-envelope fa-2x text-primary"></i>
+            </div>
+            <h4 class="h5">{t.contact.emailTitle}</h4>
+            <p>{t.contact.email}</p>
+          </div>
+          
+          <div class="contact-info-box">
+            <div class="icon-box mb-3">
+              <i class="fa fa-clock fa-2x text-primary"></i>
+            </div>
+            <h4 class="h5">{t.contact.hoursTitle}</h4>
+            <p>{t.contact.hours}</p>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+          <div class="contact-form">
+            <form action="#" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">{t.contact.formName}</label>
+                  <input type="text" class="form-control" id="name" name="name" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">{t.contact.formEmail}</label>
+                  <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="subject" class="form-label">{t.contact.formSubject}</label>
+                  <input type="text" class="form-control" id="subject" name="subject" required />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="message" class="form-label">{t.contact.formMessage}</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary">
+                    {t.contact.formSubmit}
+                    <i class="fa fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Map Section (Optional) -->
+  <section class="map-section pd-bottom-100">
+    <div class="container-fluid p-0">
+      <div style="width: 100%; height: 400px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+        <p class="text-muted">{t.contact.mapPlaceholder}</p>
+        <!-- Replace with actual Google Maps iframe or Leaflet map -->
+        <!-- <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" frameborder="0" allowfullscreen></iframe> -->
+      </div>
+    </div>
+  </section>
+</BaseLayout>

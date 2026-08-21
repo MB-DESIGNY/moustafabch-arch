@@ -1,27 +1,71 @@
 ```
+# Astro and Cloudflare build artifacts
+.astro/
+.wrangler/
+dist/
+
 # Dependencies
 node_modules/
 
-# Build artifacts
-dist/
-build/
-public/assets/
-public/css/
-public/js/
-public/webfonts/
-
-# Environment
+# Environment variables
 .env
 .env.local
 .env.*
 
-# Editors
+# IDE and editor files
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python cache (if any Python files exist in the project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build outputs
+build/
+target/
+*.min.js
+*.min.css
+*.map
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files (SQLite used by wrangler state)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Cache directories
+.cache/
+.mypy_cache/
+.pytest_cache/
+.nyc_output/
+coverage/
+
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Thumbs.db:encryptable
 ```
