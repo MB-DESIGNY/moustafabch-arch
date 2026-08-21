@@ -6,6 +6,15 @@
     "faq": "FAQ",
     "contact": "Contact"
   },
+  "common": {
+    "home": "Accueil",
+    "back": "Retour",
+    "readMore": "Lire la suite",
+    "viewAll": "Voir tout",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "noResults": "Aucun résultat trouvé"
+  },
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Mustafa Benchabane",
@@ -46,7 +55,9 @@
     "title": "Derniers Projets",
     "subtitle": "Découvrez mes derniers travaux en design architectural et marketing immobilier",
     "viewAll": "Voir Tous les Projets",
-    "featured": "En Vedette"
+    "featured": "En Vedette",
+    "pageTitle": "Portfolio de Projets - Draft Studio",
+    "pageDescription": "Découvrez le portfolio de projets de Draft Studio pour le design architectural et le marketing immobilier"
   },
   "experience": {
     "title": "Expérience Professionnelle",
@@ -68,20 +79,56 @@
     "developedBy": "Développé par"
   },
   "contact": {
+    "pageTitle": "Contactez-moi - Draft Studio",
+    "pageDescription": "Contactez Mustafa Benchabane pour toute question concernant le design architectural et le marketing immobilier",
     "title": "Prendre Contact",
-    "phone": "Téléphone",
-    "email": "Email",
-    "website": "Site Web",
-    "location": "Emplacement",
-    "sendMessage": "Envoyer un Message",
-    "yourName": "Votre Nom",
-    "yourEmail": "Votre Email",
-    "yourMessage": "Votre Message",
-    "sendNow": "Envoyer Maintenant"
+    "subtitle": "Vous avez un projet ? Parlons-en",
+    "mainTitle": "Commençons Votre Prochain Projet",
+    "description": "Contactez-moi pour discuter de votre prochain projet. Je suis disponible pour des missions freelance et des consultations.",
+    "addressTitle": "Adresse",
+    "address": "Arabie Saoudite",
+    "phoneTitle": "Téléphone",
+    "phone": "+966 XXX XXX XXXX",
+    "emailTitle": "Email",
+    "email": "contact@draftstudio.com",
+    "hoursTitle": "Heures de Travail",
+    "hours": "Dimanche - Jeudi: 9:00 - 17:00",
+    "formName": "Nom",
+    "formEmail": "Email",
+    "formSubject": "Sujet",
+    "formMessage": "Message",
+    "formSubmit": "Envoyer le Message",
+    "mapPlaceholder": "La carte sera ajoutée ici"
   },
   "faq": {
+    "pageTitle": "FAQ - Draft Studio",
+    "pageDescription": "Réponses aux questions les plus fréquemment posées sur les services de Draft Studio",
     "title": "Questions Fréquemment Posées",
-    "subtitle": "Réponses aux questions les plus courantes"
+    "subtitle": "Réponses aux questions les plus courantes",
+    "mainTitle": "Posez-nous vos questions",
+    "description": "Trouvez des réponses aux questions les plus courantes sur nos services et processus.",
+    "questions": [
+      {
+        "q": "Quels services proposez-vous ?",
+        "a": "Je propose des services de design architectural résidentiel et commercial, d'identité visuelle, de profils d'entreprise, de design de catalogues, de rendu Photoshop, ainsi que du rendu 3D et du montage vidéo immobilier (bientôt disponible)."
+      },
+      {
+        "q": "Dans quels pays travaillez-vous ?",
+        "a": "Je travaille principalement en Arabie Saoudite, en Algérie et en Russie, avec une expérience de 7 ans sur ces marchés."
+      },
+      {
+        "q": "Comment obtenir un devis ?",
+        "a": "Vous pouvez me contacter via la page Contact ou par email à contact@draftstudio.com pour discuter de votre projet et obtenir un devis personnalisé."
+      },
+      {
+        "q": "Quels sont vos délais de livraison ?",
+        "a": "Les délais varient selon la complexité du projet. Un calendrier détaillé sera fourni lors de la phase de planification du projet."
+      },
+      {
+        "q": "Acceptez-vous les projets internationaux ?",
+        "a": "Oui, je suis ouvert aux projets internationaux. N'hésitez pas à me contacter pour discuter de vos besoins."
+      }
+    ]
   },
   "breadcrumb": {
     "home": "Accueil"

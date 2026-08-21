@@ -19,7 +19,9 @@ export default defineConfig({
       lastmod: new Date(),
     }),
   ],
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    routesToExclude: ['**/*'], // Exclude all routes from Cloudflare Functions, build as static
+  }),
   vite: {
     server: {
       port: 4321,
